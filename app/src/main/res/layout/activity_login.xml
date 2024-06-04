@@ -101,6 +101,7 @@
         android:backgroundTint="@color/blue"
         android:fontFamily="@font/montserrat_regular"
         android:text="Entrar"
+        app:cornerRadius="10dp"
         android:textSize="20sp" />
 
     <TextView
