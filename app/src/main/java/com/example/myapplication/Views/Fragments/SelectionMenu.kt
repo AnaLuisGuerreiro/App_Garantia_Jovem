@@ -1,4 +1,4 @@
-package com.example.myapplication.Views.Views
+package com.example.myapplication.Views.Fragments
 
 import android.os.Bundle
 import android.widget.ImageView

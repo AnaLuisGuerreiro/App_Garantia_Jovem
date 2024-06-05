@@ -22,7 +22,7 @@
             android:name=".Views.Views.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.SelectionMenu"
+            android:name=".Views.Fragments.SelectionMenu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

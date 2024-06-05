@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.example.myapplication.Adapters.ViewPagerAdapter
 import com.example.myapplication.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -25,7 +26,8 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigationView = findViewById(R.id.bottomNav)
         viewPagerMain = findViewById(R.id.viewPagerMain)
-        viewPagerAdapter = ViewPagerAdapter(this)
+        viewPagerAdapter =
+            ViewPagerAdapter(this)
         viewPagerMain.setAdapter(viewPagerAdapter)
         bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
