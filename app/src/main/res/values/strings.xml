@@ -2,4 +2,8 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cria_o_teu_emprego_ou_empresa">Cria o teu Emprego ou Empresa</string>
+    <string name="apoios_contrata_o">Apoios à Contratação</string>
+    <string name="estudar_ou_trabalhar_no_estrangeiro">Estudar ou Trabalhar no Estrangeiro</string>
+
 </resources>
