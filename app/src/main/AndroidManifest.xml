@@ -15,8 +15,12 @@
         <activity
             android:name=".Views.Views.RegisterActivity"
             android:exported="false" />
+
         <activity
             android:name=".Views.Views.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.Views.PoliticasActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
