@@ -14,7 +14,7 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="90sp"
+                android:layout_marginTop="70sp"
                 android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
                 android:text="Login"
@@ -30,7 +30,6 @@
         app:cardCornerRadius="15dp"
         app:cardElevation="20dp">
 
-
         <EditText
             android:id="@+id/username"
             android:layout_width="match_parent"
@@ -40,8 +39,15 @@
             android:inputType="text"
             android:hint="Endereço de email"
             android:layout_marginLeft="18dp"
-            android:fontFamily="@font/montserrat_regular"
+            android:fontFamily="@font/montserrat_regular" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="313dp"
+            android:src="@drawable/email_icon"
             />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -50,7 +56,6 @@
         android:layout_margin="30dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="10dp">
-
 
         <EditText
             android:id="@+id/password"
@@ -63,38 +68,77 @@
             android:layout_marginLeft="18dp"
             android:fontFamily="@font/montserrat_regular"
             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="313dp"
+            android:src="@drawable/password_icon"
+            />
+
+
     </androidx.cardview.widget.CardView>
 
     <RadioButton
         android:id="@+id/rememberButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="35dp"
         android:fontFamily="@font/montserrat_regular"
-        android:minWidth="15dp"
-        android:minHeight="15dp"
         android:padding="4dp"
-        android:text="Lembrar-se de mim" />
+        android:layout_marginTop="-20dp"
+        android:text="Lembrar-se de mim"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue"
-        android:layout_marginTop="50dp"
         android:layout_marginStart="100dp"
-        android:textSize="20dp"
-        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
-        android:text="Entrar" />
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Entrar"
+        app:cornerRadius="10dp"
+        android:textSize="20sp" />
 
-<TextView
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center"
     android:textColor="@color/white"
+    android:fontFamily="@font/montserrat_medium"
     android:layout_marginTop="20dp"
     android:text="Esqueceste-te da password?"
     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="60dp"
+        android:textSize="18sp"
+        android:text="Se ainda não tens conta,\n o teu futuro começa aqui!"
+        />
+
+
+    <Button
+        android:id="@+id/buttonLetsGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:backgroundTint="#FFFF"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Vamos lá ➡️"
+        android:textSize="16sp"
+        android:textColor="@color/green"
+        />
+
+
 </LinearLayout>
