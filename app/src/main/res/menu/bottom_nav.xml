@@ -5,16 +5,19 @@
     <item
         android:id="@+id/bottom_geo"
         android:title=""
-        android:icon="@drawable/geo_icon"/>
+        android:icon="@drawable/geo_icon"
+        android:state_checked="true"/>
 
     <item
         android:id="@+id/bottom_home"
         android:title=""
-        android:icon="@drawable/home_icon"/>
+        android:icon="@drawable/home_icon"
+        android:state_checked="true"/>
 
     <item
         android:id="@+id/bottom_phone"
         android:title=""
-        android:icon="@drawable/phone_icon"/>
+        android:icon="@drawable/phone_icon"
+        android:state_checked="true"/>
 
 </menu>

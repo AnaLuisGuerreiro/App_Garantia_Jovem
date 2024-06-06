@@ -10,8 +10,9 @@
       android:strokeWidth="2"
       android:fillColor="#00000000"
       android:strokeLineCap="round">
+
     <aapt:attr name="android:strokeColor">
-      <gradient 
+      <gradient
           android:startX="4.401"
           android:startY="11.964"
           android:endX="24.885"
@@ -23,4 +24,6 @@
       </gradient>
     </aapt:attr>
   </path>
+
+
 </vector>

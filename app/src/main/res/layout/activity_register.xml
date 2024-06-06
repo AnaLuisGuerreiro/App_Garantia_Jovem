@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/register"
@@ -13,55 +13,197 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65sp"
+        android:layout_marginTop="51dp"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center"
         android:text="Estás a 2 minutos do teu futuro!"
         android:textColor="@color/white"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
         android:fontFamily="@font/montserrat_regular"
-        android:layout_marginTop="18dp"
+        android:gravity="center"
         android:text="Conta-nos tudo para te podermos ajudar"
-        />
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/cardView1"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="473dp"
         app:cardCornerRadius="15dp"
-        app:cardElevation="10dp">
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <EditText
             android:id="@+id/firstName"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:ems="10"
-            android:backgroundTint="@color/white"
-            android:inputType="text"
-            android:hint="Primeiro nome"
             android:layout_marginStart="18dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
             android:fontFamily="@font/montserrat_regular"
-            />
+            android:hint="Primeiro nome"
+            android:inputType="text" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="313dp"
-            android:src="@drawable/user_orange_icon"
-            />
+            android:src="@drawable/user_orange_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="380dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="18dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Ultimo nome"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="313dp"
+            android:src="@drawable/user_orange_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="350dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="18dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Endereço de email"
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="318dp"
+            android:src="@drawable/email_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="295dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="18dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="DD/MM/AAAA"
+            android:inputType="date" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="318dp"
+            android:src="@drawable/calendary_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="357dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="295dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="18dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Telemóvel"
+            android:inputType="date" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="318dp"
+            android:src="@drawable/mobile_icon" />
 
     </androidx.cardview.widget.CardView>
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

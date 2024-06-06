@@ -1,4 +1,4 @@
-package com.example.myapplication.Views.Fragments
+package com.example.myapplication.Views.Views
 
 import android.os.Bundle
 import android.widget.ImageView
@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.R
 
-class SelectionMenu : AppCompatActivity() {
+class SelectionMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
