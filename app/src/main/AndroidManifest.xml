@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Views.Views.SelectedInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.Views.SelectionMenuActivity"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:name=".Views.Views.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.SelectedInfoActivity"
+            android:name=".Views.Views.LocalizacaoActivity"
 
             android:exported="true">
             <intent-filter>
