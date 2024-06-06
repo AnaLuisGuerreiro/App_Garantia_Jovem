@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
 
         android:id="@+id/main"
-        tools:context=".Views.Views.SelectionMenu"
+        tools:context=".Views.Views.SelectionMenuActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 >
