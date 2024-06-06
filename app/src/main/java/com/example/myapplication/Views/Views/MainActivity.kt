@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         bottomNavigationView = findViewById(R.id.bottomNav)
-        viewPagerMain = findViewById(R.id.viewPagerMain)
+        viewPagerMain = findViewById(R.id.frameLayout)
         viewPagerAdapter = ViewPagerAdapter(this)
         viewPagerMain.adapter = viewPagerAdapter
 

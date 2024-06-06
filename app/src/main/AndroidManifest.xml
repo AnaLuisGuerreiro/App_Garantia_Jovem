@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Views.Views.HomeActivity"
+            android:name=".Views.Views.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Views.Views.SelectedInfoActivity"
@@ -28,7 +28,7 @@
             android:name=".Views.Views.SelectionMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.MainActivity"
+            android:name=".Views.Views.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
