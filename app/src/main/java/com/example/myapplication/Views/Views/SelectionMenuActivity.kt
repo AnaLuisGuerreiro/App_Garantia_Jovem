@@ -21,6 +21,7 @@ class SelectionMenuActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+
         val imageView1: ImageView = findViewById(R.id.imageView1)
         imageView1.setImageResource(R.drawable.image2)
 
