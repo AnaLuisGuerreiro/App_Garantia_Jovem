@@ -37,17 +37,17 @@
 
         <TextView
             android:id="@+id/Title"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="48dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="EMPREGO"
             android:textColor="#39A934"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/Description"
