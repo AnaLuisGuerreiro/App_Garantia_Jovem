@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/degrade_background"
     android:orientation="vertical"
-    tools:context=".Views.Views.LoginActivity">
+    tools:context=".Views.LoginActivity">
 
             <TextView
                 android:id="@+id/textView"

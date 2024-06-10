@@ -1,10 +1,12 @@
-package com.example.myapplication.Views.Views
+package com.example.myapplication.Fragments
 
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
@@ -13,22 +15,26 @@ import com.example.myapplication.Adapters.ImageAdapter
 import com.example.myapplication.R
 import kotlin.math.abs
 
-class HomeActivity : AppCompatActivity() {
+class Home : Fragment() {
+
     private lateinit var viewPagerCarousel: ViewPager2
     private lateinit var handler: Handler
     private lateinit var imageList: ArrayList<Int>
     private lateinit var adapter: ImageAdapter
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_home)
 
-        init()
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+
+        init(view)
         setUpTransformer()
+        return view
     }
 
-    private fun init() {
-        viewPagerCarousel = findViewById(R.id.viewPagerCarousel)
+    private fun init(view: View) {
+        viewPagerCarousel = view.findViewById(R.id.viewPagerCarousel)
         handler = Handler(Looper.myLooper()!!)
         imageList = ArrayList()
 
@@ -48,10 +54,10 @@ class HomeActivity : AppCompatActivity() {
 
     private fun setUpTransformer() {
         val transform = CompositePageTransformer()
-        transform.addTransformer(MarginPageTransformer(40))
+        transform.addTransformer(MarginPageTransformer(30))
         transform.addTransformer { page, position ->
             val r = 1 - abs(position)
-            page.scaleY = 0.85f + r * 0.15f
+            page.scaleY = 0.90f + r * 0.10f
         }
         viewPagerCarousel.setPageTransformer(transform)
     }

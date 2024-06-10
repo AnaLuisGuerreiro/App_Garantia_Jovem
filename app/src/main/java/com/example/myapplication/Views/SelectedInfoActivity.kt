@@ -1,4 +1,4 @@
-package com.example.myapplication.Views.Views
+package com.example.myapplication.Views
 
 import android.animation.LayoutTransition
 import android.os.Bundle
