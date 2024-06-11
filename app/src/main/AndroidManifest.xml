@@ -13,7 +13,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-
+            android:name=".Views.Views.LocalizacaoActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.Views.SelectedInfoActivity"
             android:exported="false" />
         <activity
@@ -22,7 +24,6 @@
         <activity
             android:name=".Views.Views.HomeActivity"
             android:exported="false" />
-
         <activity
             android:name=".Views.Views.LoginActivity"
             android:exported="false" />
@@ -30,12 +31,10 @@
             android:name=".Views.Views.RegisterActivity"
             android:exported="false" />
         <activity
-
-            android:name=".Views.Views.LocalizacaoActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".Views.Views.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParceirosActivity"
 
             android:exported="true">
             <intent-filter>
