@@ -35,6 +35,7 @@ class Home : Fragment() {
 
     private fun init(view: View) {
         viewPagerCarousel = view.findViewById(R.id.viewPagerCarousel)
+        viewPagerCarousel = view.findViewById(R.id.viewPagerCarousel)
         handler = Handler(Looper.myLooper()!!)
         imageList = ArrayList()
 
