@@ -13,29 +13,22 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Views.SelectedInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.Views.LocalizacaoActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.SelectedInfoActivity"
+            android:name=".Views.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.SelectionMenuActivity"
+            android:name=".Views.SelectionMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.Views.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.Views.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.Views.MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ParceirosActivity"
-
+            android:name=".Views.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
