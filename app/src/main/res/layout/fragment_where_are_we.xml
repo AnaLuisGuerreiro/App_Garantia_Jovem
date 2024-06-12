@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".Views.Fragments.WhereAreWe">
+    tools:context=".Fragments.WhereAreWe">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="20dp"
-        android:text="Localizações / Parceiros" />
+        android:text="Localizações / Parceiros"
+        android:textSize="20dp" />
 
 </FrameLayout>

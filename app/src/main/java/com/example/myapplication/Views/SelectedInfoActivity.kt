@@ -1,4 +1,4 @@
-package com.example.myapplication.Views.Views
+package com.example.myapplication.Views
 
 import android.animation.LayoutTransition
 import android.os.Bundle
@@ -29,6 +29,9 @@ class SelectedInfoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+        val imageView1: ImageView = findViewById(R.id.imageView1)
+        imageView1.setImageResource(R.drawable.image2)
+
 
         information = findViewById(R.id.information)
         layout = findViewById(R.id.layouts)
@@ -39,7 +42,6 @@ class SelectedInfoActivity : AppCompatActivity() {
             val v = if (information.visibility == View.GONE) View.VISIBLE else View.GONE
             information.visibility = v
         }
-        val imageView1: ImageView = findViewById(R.id.imageView1)
-        imageView1.setImageResource(R.drawable.image2)
+
     }
 }

@@ -15,7 +15,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".Views.Views.SelectedInfoActivity">
+        tools:context=".Views.SelectedInfoActivity">
 
         <ImageView
             android:id="@+id/imageView1"
@@ -97,10 +97,10 @@
 
         <TextView
             android:id="@+id/title2"
-            android:layout_width="336dp"
-            android:layout_height="40dp"
+            android:layout_width="325dp"
+            android:layout_height="45dp"
             android:layout_marginLeft="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="35dp"
             android:background="@drawable/rounded_corners"
             android:fontFamily="@font/montserrat_semibold"
@@ -110,7 +110,7 @@
             android:textColor="@color/white"
             android:textColorLink="#3F51B5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.219"
+            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/horizontalLine1"
             tools:ignore="MissingConstraints" />
@@ -119,14 +119,14 @@
             android:id="@+id/textView5"
             android:layout_width="267dp"
             android:layout_height="41dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/montserrat_semibold"
             android:paddingLeft="3dp"
             android:text="Apoio ao Empreendedorismo e Criação do Próprio Emprego"
             android:textColor="@color/green"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintHorizontal_bias="0.288"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/title2"
             tools:ignore="MissingConstraints" />
@@ -134,16 +134,16 @@
         <androidx.cardview.widget.CardView
 
             android:id="@+id/expandable"
-            android:layout_width="336dp"
+            android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="@color/green"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="8dp"
             app:cardElevation="10dp"
-            app:contentPadding="20dp"
+            app:contentPadding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.616"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             tools:ignore="MissingConstraints">
@@ -157,7 +157,7 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
                     android:text="@string/o_que_e"
                     android:textColor="@color/white"

@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.myapplication.Views.Fragments.ContactUs;
-import com.example.myapplication.Views.Fragments.Home;
-import com.example.myapplication.Views.Fragments.WhereAreWe;
+import com.example.myapplication.Fragments.ContactUs;
+import com.example.myapplication.Fragments.Home;
+import com.example.myapplication.Fragments.WhereAreWe;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
