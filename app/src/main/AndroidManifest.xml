@@ -19,7 +19,7 @@
             android:name=".Views.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.Views.LocalizacaoActivity"
+            android:name=".Views.LocalizacaoActivity"
             android:exported="false" />
         <activity
             android:name=".Views.RegisterActivity"
