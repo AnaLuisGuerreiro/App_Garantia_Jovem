@@ -6,12 +6,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 
-class PoliticasActivity : AppCompatActivity() {
+class PoliticsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(com.example.myapplication.R.layout.activity_politicas)
+        setContentView(com.example.myapplication.R.layout.activity_politics)
 
     }
 }
