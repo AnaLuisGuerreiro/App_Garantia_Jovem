@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 R.id.bottom_phone -> {
-                    loadFragment(ContactUs())
+                    loadFragment(ContactUs<Any>())
                     true
                 }
                 else -> false
