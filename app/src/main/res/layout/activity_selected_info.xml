@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    android:layout_width="409dp"
-    android:layout_height="10000dp"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
@@ -84,16 +84,29 @@
 
 
         <View
-        android:id="@+id/horizontalLine3"
-        android:layout_width="0dp"
-        android:layout_height="0.005dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="2000dp"
-        android:layout_marginRight="28dp"
-        android:background="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title2" />
+            android:id="@+id/horizontalLine2"
+            android:layout_width="0dp"
+            android:layout_height="0.005dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable3" />
+
+        <View
+            android:id="@+id/horizontalLine3"
+            android:layout_width="0dp"
+            android:layout_height="0.005dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/expandable5" />
 
         <TextView
             android:id="@+id/title2"
@@ -133,23 +146,23 @@
 
         <androidx.cardview.widget.CardView
 
-            android:id="@+id/expandable"
+            android:id="@+id/expandable1"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/green"
             app:cardCornerRadius="8dp"
             app:cardElevation="10dp"
             app:contentPadding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.616"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
-                android:id="@+id/layouts"
+                android:id="@+id/layouts1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
@@ -159,16 +172,223 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
-                    android:text="@string/o_que_e"
+                    android:text="O que é?"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
 
                 <TextView
-                    android:id="@+id/information"
+                    android:id="@+id/information1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="12dp"
                     android:text="@string/info1"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable2"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable1"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Para quem?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="Jovens à procura do primeiro emprego ou desempregados, com idade entre os 18 e os 35 anos, em situação de desemprego involuntário ou inscritos há mais de 9 meses. \n\nTens de estar inscrito no IEFP. \n\nConsulta aqui."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable3"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable2"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Como funciona?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="O projeto de criação de empresa não pode envolver:
+
+\n\n\t\t• a criação de mais de 10 postos de trabalho.
+
+\n\n\t\t• um investimento total superior a 200.000€.
+
+\n\nO projeto é apresentado diretamente a uma das instituições bancárias aderentes. No caso dos projetos de criação do próprio emprego, o acesso ao pagamento de uma só vez do montante total do subsídio de desemprego pode ser complementado por acesso a crédito bancário. As candidaturas são apresentadas no teu serviço de emprego do IEFP."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/PCM"
+            android:layout_width="299dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="29dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingLeft="3dp"
+            android:text="Programa Nacional de Microcrédito"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable3"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable4"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PCM"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="O que é?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="O Programa Nacional de Microcrédito baseia-se num acesso mais facilitado ao crédito - através da tipologia MICROINVEST - e na disponibilização de apoio técnico na criação e na formação do empreendedor, durante os primeiros anos de vida do negócio.\n\nSurge para apoiar a criação do emprego e o empreendedorismo entre as populações com maiores dificuldades de acesso ao mercado de trabalho."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable5"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/green"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable4"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Para quem?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="Jovens até aos 29 anos com especiais dificuldades de acesso ao mercado de trabalho e em risco de exclusão social, que possuam uma ideia de negócio viável, perfil de empreendedor e formulem e apresentem projetos viáveis para criar postos de trabalho.\n\nMais informações, candidaturas aqui."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
                     android:textSize="10sp"

@@ -1,5 +1,6 @@
 package com.example.myapplication.Views
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
@@ -20,6 +21,11 @@ class SelectionMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(binding.root)
+
+        binding.criaOTeuEmprego.setOnClickListener{
+            val intent = Intent(this, SelectedInfoActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val imageView1: ImageView = findViewById(R.id.imageView1)
