@@ -36,10 +36,10 @@
             </intent-filter>
         </activity>
        <activity
-        android:name=".Views.Views.PoliticsActivity"
+        android:name=".Views.PoliticsActivity"
         android:exported="false"/>
         <activity
-            android:name=".Views.Views.FAQsActivity"
+            android:name=".Views.FAQsActivity"
             android:exported="false" />
 </application>
 

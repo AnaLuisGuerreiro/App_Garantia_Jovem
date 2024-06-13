@@ -62,4 +62,6 @@ class Home : Fragment() {
         }
         viewPagerCarousel.setPageTransformer(transform)
     }
+
+
 }

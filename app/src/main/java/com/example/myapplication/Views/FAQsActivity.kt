@@ -1,10 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.Views
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.ExpandableListView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapp.ExpandableListAdapter
+import com.example.myapplication.Adapters.ExpandableListAdapter
 import com.example.myapplication.R
 
 class FAQsActivity : AppCompatActivity() {
@@ -19,7 +19,6 @@ class FAQsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faqs)
 
-        expandableListView = findViewById(R.id.expandable_list_view)
         listGroup = mutableListOf()
         listItem = hashMapOf()
         expandableListAdapter = ExpandableListAdapter(this, listGroup, listItem)

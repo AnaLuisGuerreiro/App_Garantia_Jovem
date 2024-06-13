@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/aboutUs"
+            android:title="Sobre"/>
+
+        <item
+            android:id="@+id/rgpd"
+            android:title="Perguntas frequentes"/>
+
+        <item
+            android:id="@+id/faqs"
+            android:title="Perguntas Frequentes"/>
+
+        <item
+            android:id="@+id/privacy"
+            android:title="Politicas de Privacidade"/>
+
+    </group>
+
+</menu>

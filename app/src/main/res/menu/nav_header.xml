@@ -4,18 +4,16 @@
 
 
     <item
-        android:id="@+id/faqs"
+        android:id="@+id/hamburguerIcon"
         android:title=""
         app:showAsAction="ifRoom"
         />
 
     <item
-        android:id="@+id/aboutUs"
+        android:id="@+id/userIcon"
         android:title=""
         android:icon="@drawable/user_degrade_icon"
         app:showAsAction="ifRoom"
         />
-
-
 
 </menu>
