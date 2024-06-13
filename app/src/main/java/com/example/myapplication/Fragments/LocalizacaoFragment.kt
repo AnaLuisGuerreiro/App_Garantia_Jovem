@@ -7,17 +7,18 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageView
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentLocalizacaoBinding
 
-class WhereAreWe : Fragment() {
+class LocalizacaoFragment : Fragment() {
 
     private var _binding: FragmentLocalizacaoBinding? = null
     private val binding get() = _binding!!
 
-    val listaConcelhos = arrayOf("Concelhos","Abrantes","Águeda","Aguiar da Beira","Alandroal","Albergaria-a-Velha","Albufeira","Alcácer do Sal","Almada","Arouca","Baião", "Barcelos", "Barrancos", "Barreiro", "Batalha", "Beja", "Belmonte", "Benavente", "Bombarral", "Borba", "Boticas", "Braga","Espinho","Guarda", "Moita", "Portel")
+    val listaConselhos = arrayOf("Conselhos","Arouca","Espinho","Guarda", "Moita", "Portel")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,7 +35,7 @@ class WhereAreWe : Fragment() {
         mapa.setImageResource(R.drawable.mapa)
 
         val spinner = binding.spinner
-        val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaConcelhos)
+        val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaConselhos)
         spinner.adapter = arrayAdapter
         spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
@@ -43,7 +44,7 @@ class WhereAreWe : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                Toast.makeText(requireContext(), "Conselho selecionado: " + listaConcelhos[position], Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Conselho selecionado: " + listaConselhos[position], Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -56,5 +57,4 @@ class WhereAreWe : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

@@ -19,6 +19,7 @@ class FAQsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faqs)
 
+        //expandableListView = findViewById(R.id.expandable_list_view)
         listGroup = mutableListOf()
         listItem = hashMapOf()
         expandableListAdapter = ExpandableListAdapter(this, listGroup, listItem)
