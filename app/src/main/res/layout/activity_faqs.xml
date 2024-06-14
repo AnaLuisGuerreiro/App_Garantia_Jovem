@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--<ScrollView
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="800dp"
     android:layout_width="400dp"
-    xmlns:tools="http://schemas.android.com/tools">-->
+    xmlns:tools="http://schemas.android.com/tools">
 
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FAQsActivity">
-    <!--android:layout_width="800dp"
-    android:layout_height="400dp"-->
-
-
-
-        <!--android:layout_width="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">-->
+        android:orientation="vertical">
 
 
     <ImageView
@@ -33,9 +21,14 @@
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text_titulo"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/miuda_oculos" />
+        app:srcCompat="@drawable/miuda_oculos">
+
+
+    </ImageView>
+
+
 
     <TextView
         android:id="@+id/text_titulo"
@@ -48,7 +41,10 @@
         android:textColor="@color/green"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
 
 
     <TextView
@@ -65,16 +61,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_titulo"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitulo">
 
 
     </androidx.recyclerview.widget.RecyclerView>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
