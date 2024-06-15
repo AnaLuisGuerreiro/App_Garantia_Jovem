@@ -3,7 +3,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="800dp"
+    android:layout_height="900dp"
     android:layout_width="400dp"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -52,7 +52,7 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="Perguntas Frequentes"
         android:textColor="@color/dark_blue"
@@ -60,8 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_titulo"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toBottomOf="@+id/text_titulo">
 
     </TextView>
 
@@ -71,7 +70,8 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_subtitulo">
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitulo"
+        android:padding="10dp">
 
 
     </androidx.recyclerview.widget.RecyclerView>

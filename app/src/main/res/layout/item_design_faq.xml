@@ -11,7 +11,7 @@
         android:id="@+id/constraint_row"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:padding="0dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/title_container"
@@ -70,11 +70,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="Description"
             android:textSize="14sp"
-            android:visibility="invisible"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_container"
-            tools:visibility="invisible" />
+            app:layout_constraintTop_toBottomOf="@+id/title_container" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
