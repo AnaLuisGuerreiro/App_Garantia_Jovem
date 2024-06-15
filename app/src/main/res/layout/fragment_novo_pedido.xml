@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_background"
+    android:orientation="vertical"
+    tools:context=".Views.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:text="Estás a 2 minutos do teu futuro!"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:text="Conta-nos tudo para te podermos ajudar"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/firstName"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/icon1"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textSize="20dp"
+                android:text="Filipe"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/montserrat_regular"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="290dp"
+                android:src="@drawable/user_orange_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/firstName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lastName"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Araújo"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="270dp"
+                android:src="@drawable/user_orange_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/lastName"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/dark_blue"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="filipe.araujo.prt_a@msft.cesae.pt"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="270dp"
+                android:src="@drawable/email_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/emailRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/emailRegister"
+                app:layout_constraintTop_toTopOf="@+id/emailRegister" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/birthDate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="30/03/1997"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="290dp"
+                android:src="@drawable/calendary_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/birthDate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="16dp"
+                android:gravity="center_vertical"
+                android:text="932442637"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="270dp"
+                android:src="@drawable/mobile_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/phoneNumber"
+                app:layout_constraintStart_toStartOf="@+id/phoneNumber"
+                app:layout_constraintTop_toTopOf="@+id/phoneNumber" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/countyUser"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Porto"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="270dp"
+                android:src="@drawable/geo_orange_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/countyUser"
+                app:layout_constraintEnd_toEndOf="@+id/countyUser"
+                app:layout_constraintStart_toStartOf="@+id/countyUser"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/parishUser"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Paranhos"
+                tools:ignore="MissingConstraints,TextFields" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="270dp"
+                android:src="@drawable/geo_orange_icon"
+                app:layout_constraintBottom_toBottomOf="@+id/parishUser"
+                app:layout_constraintEnd_toEndOf="@+id/parishUser"
+                app:layout_constraintStart_toStartOf="@+id/parishUser"
+                app:layout_constraintTop_toTopOf="@+id/parishUser" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/choiceOfUser"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="18dp"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="O que procuras?"
+                android:inputType="text"
+                tools:ignore="MissingConstraints,TextFields" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

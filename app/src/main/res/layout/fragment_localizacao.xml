@@ -180,6 +180,7 @@
 
         <Spinner
             android:id="@+id/spinner"
+            android:textColor="@color/dark_blue"
             android:layout_width="150dp"
             android:layout_height="41dp"
             android:layout_marginTop="156dp"
