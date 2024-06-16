@@ -32,10 +32,10 @@
             android:text="Estamos aqui para apoiar a tua empregabilidade"
             android:textSize="25dp" />
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPagerCarousel"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/carousel"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:paddingStart="20dp"
             android:paddingEnd="20dp" />

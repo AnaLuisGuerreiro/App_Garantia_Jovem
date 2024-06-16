@@ -39,12 +39,10 @@ class MainActivity : AppCompatActivity() {
 
         loadFragment(Home())
 
+        // -------------------- Top navbar, buttons listeners
         val topAppBar = binding.topAppBar
 
-        topAppBar.setNavigationOnClickListener {
-            drawerLayout.openDrawer(binding.hamburguerView)
-        }
-
+        // User icon - user profile
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.userIcon -> {
@@ -55,6 +53,24 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // Open hamburguer menu
+        topAppBar.setNavigationOnClickListener {
+            drawerLayout.openDrawer(binding.hamburguerView)
+        }
+
+        val navigationView = binding.hamburguerView
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.hamburguerIcon -> {
+                    loadFragment(Home())
+                    drawerLayout.closeDrawers()
+                    true
+                }
+                else -> false
+            }
+        }
+
+        // --------------      Bottom navbar, buttons listeners
         bottomNavigationView = binding.bottomNav
         bottomNavigationView.selectedItemId = R.id.bottom_home
         bottomNavigationView.itemIconTintList = null
@@ -77,19 +93,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Configuração do listener para os itens do menu do Drawer
-        val navigationView = binding.hamburguerView
-        navigationView.setNavigationItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                R.id.hamburguerIcon -> {
-                    loadFragment(Home())
-                    drawerLayout.closeDrawers()
-                    true
-                }
-                // Adicione outros casos conforme necessário
-                else -> false
-            }
-        }
     }
 
     private fun loadFragment(fragment: Fragment) {

@@ -17,7 +17,6 @@
             android:layout_width="247dp"
             android:layout_height="227dp"
             android:layout_marginStart="176dp"
-            android:layout_marginTop="32dp"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

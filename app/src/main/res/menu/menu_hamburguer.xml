@@ -11,12 +11,12 @@
             android:title="Sobre"/>
 
         <item
-            android:id="@+id/rgpd"
+            android:id="@+id/faqs"
             android:title="Perguntas frequentes"/>
 
         <item
-            android:id="@+id/faqs"
-            android:title="Perguntas Frequentes"/>
+            android:id="@+id/rgpd"
+            android:title="RGPD"/>
 
         <item
             android:id="@+id/privacy"

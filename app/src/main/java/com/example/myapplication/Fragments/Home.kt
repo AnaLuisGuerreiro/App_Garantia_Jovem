@@ -1,67 +1,56 @@
 package com.example.myapplication.Fragments
 
+import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.CompositePageTransformer
-import androidx.viewpager2.widget.MarginPageTransformer
-import androidx.viewpager2.widget.ViewPager2
-import com.example.myapplication.Adapters.ImageAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.Adapters.ItemAdapter
+import com.example.myapplication.Models.Item
 import com.example.myapplication.R
-import kotlin.math.abs
+import com.example.myapplication.Views.RegisterActivity
+import com.example.myapplication.databinding.FragmentHomeBinding
+
 
 class Home : Fragment() {
 
-    private lateinit var viewPagerCarousel: ViewPager2
-    private lateinit var handler: Handler
-    private lateinit var imageList: ArrayList<Int>
-    private lateinit var adapter: ImageAdapter
+    private lateinit var binding: FragmentHomeBinding
+    private lateinit var adapter: ItemAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
-
-        init(view)
-        setUpTransformer()
-        return view
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    private fun init(view: View) {
-        viewPagerCarousel = view.findViewById(R.id.viewPagerCarousel)
-        viewPagerCarousel = view.findViewById(R.id.viewPagerCarousel)
-        handler = Handler(Looper.myLooper()!!)
-        imageList = ArrayList()
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        imageList.add(R.drawable.img1_carousel)
-        imageList.add(R.drawable.img2_carousel)
-        imageList.add(R.drawable.img3_carousel)
-        imageList.add(R.drawable.img4_carousel)
+        val list = listOf(
+            Item(R.drawable.img1_carousel, "Se tens entre\n15 e 29 anos\nde idade"),
+            Item(R.drawable.img2_carousel, "Se não estás\na trabalhar\nnem a estudar"),
+            Item(R.drawable.img3_carousel, "Se não estás\ninscrito no\nIEFP-Centro\nde Emprego"),
+            Item(R.drawable.img4_carousel, "Basta uma\ninscrição para\ncomeçar")
+        )
 
-        adapter = ImageAdapter(viewPagerCarousel, imageList)
+        adapter = ItemAdapter(list)
 
-        viewPagerCarousel.adapter = adapter
-        viewPagerCarousel.offscreenPageLimit = 3
-        viewPagerCarousel.clipToPadding = false
-        viewPagerCarousel.clipChildren = false
-        viewPagerCarousel.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
-    }
 
-    private fun setUpTransformer() {
-        val transform = CompositePageTransformer()
-        transform.addTransformer(MarginPageTransformer(30))
-        transform.addTransformer { page, position ->
-            val r = 1 - abs(position)
-            page.scaleY = 0.90f + r * 0.10f
+        binding.carousel.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
+        binding.carousel.adapter = adapter
+
+        binding.carousel.setHasFixedSize(true)
+
+        binding.imageLetsGo.setOnClickListener {
+            val intent = Intent(requireContext(), RegisterActivity::class.java)
+            startActivity(intent)
         }
-        viewPagerCarousel.setPageTransformer(transform)
     }
-
-
 }
+
+
+
