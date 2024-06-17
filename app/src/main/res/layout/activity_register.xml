@@ -189,7 +189,6 @@
             android:ems="10"
             android:fontFamily="@font/montserrat_regular"
             android:hint="DD/MM/AAAA"
-            android:inputType="date"
             tools:ignore="MissingConstraints,TextFields" />
 
             <ImageView
@@ -336,7 +335,7 @@
             android:layout_height="match_parent">
 
             <Spinner
-                android:id="@+id/spinnerRegisto"
+                android:id="@+id/spinnerRegister"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginStart="18dp"
@@ -344,8 +343,12 @@
                 android:ems="10"
                 android:fontFamily="@font/montserrat_regular"
                 android:hint="O que procuras?"
-                tools:ignore="MissingConstraints">
-            </Spinner>
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -357,10 +360,11 @@
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginBottom="45dp"
         android:backgroundTint="@color/blue"
         android:fontFamily="@font/montserrat_regular"
         android:padding="10dp"

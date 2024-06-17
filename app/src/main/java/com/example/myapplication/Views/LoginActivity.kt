@@ -6,7 +6,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.Fragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityLoginBinding
 
@@ -28,16 +27,14 @@ class LoginActivity : AppCompatActivity() {
 
         binding.buttonLogin.setOnClickListener {
             val i = Intent(this, MainActivity::class.java)
-            i.putExtra("codigoFrag","userProfile")
+            i.putExtra("codeFrag","userProfile")
             startActivity(i)
+        }
 
-            //loadFragment(UserProfile())
+        binding.buttonLetsGo.setOnClickListener{
+            val i = Intent(this, RegisterActivity::class.java)
+            startActivity(i)
         }
     }
 
-    private fun loadFragment(fragment: Fragment) {
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.frameLayout, fragment)
-        transaction.commit()
-    }
 }

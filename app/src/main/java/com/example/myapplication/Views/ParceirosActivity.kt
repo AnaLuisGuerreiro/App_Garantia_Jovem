@@ -1,7 +1,6 @@
 package com.example.myapplication.Views
 
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
@@ -17,8 +16,7 @@ class ParceirosActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        val mapa: ImageView = findViewById(R.id.mapa)
-        mapa.setImageResource(R.drawable.mapa)
+        binding.mapa.setImageResource(R.drawable.mapa)
 
     }
 }

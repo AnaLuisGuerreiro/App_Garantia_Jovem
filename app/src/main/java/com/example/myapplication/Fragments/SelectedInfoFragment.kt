@@ -21,16 +21,7 @@ import androidx.fragment.app.Fragment
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentSelectedInfoBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [SelectedInfoFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SelectedInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentSelectedInfoBinding

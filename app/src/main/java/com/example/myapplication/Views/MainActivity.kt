@@ -13,6 +13,7 @@ import com.example.myapplication.Fragments.FAQsFragment
 import com.example.myapplication.Fragments.Home
 import com.example.myapplication.Fragments.PoliticsFragment
 import com.example.myapplication.Fragments.Rgpd
+import com.example.myapplication.Fragments.SecondUserProfileFragment
 import com.example.myapplication.Fragments.SobreFragment
 import com.example.myapplication.Fragments.UserProfile
 import com.example.myapplication.Fragments.WhereAreWe
@@ -34,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        val i = intent
-
         drawerLayout = binding.main
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
@@ -44,8 +43,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        if (i.extras?.getString("codigoFrag").equals("userProfile")) {
+        if (intent.extras?.getString("codeFrag").equals("userProfile")) {
             loadFragment(UserProfile())
+        } else if (intent.extras?.getString("fragment").equals("secondUserProfile")) {
+            loadFragment(SecondUserProfileFragment())
         } else {
             loadFragment(Home())
         }

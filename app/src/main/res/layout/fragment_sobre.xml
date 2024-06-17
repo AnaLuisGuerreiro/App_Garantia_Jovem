@@ -48,14 +48,14 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
 
         <TextView
             android:id="@+id/Description"
-            android:layout_width="230dp"
-            android:layout_height="132dp"
+            android:layout_width="250dp"
+            android:layout_height="126dp"
 
             android:layout_marginTop="17dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="É um compromisso para que gradualmente e num prazo de 4 meses após o jovem sair do sistema de ensino ou do mercado de trabalho, lhe seja feita uma oferta de emprego, de continuação dos estudos, de formação profissional ou de estágio."
             android:textColor="@color/dark_blue"
-            android:textSize="12sp"
+            android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.154"
             app:layout_constraintStart_toStartOf="parent"
@@ -134,6 +134,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
             android:layout_marginLeft="30dp"
             android:layout_marginTop="24dp"
             android:layout_marginRight="30dp"
+            android:textSize="15sp"
             android:fontFamily="@font/montserrat_regular"
 
             android:text="A Garantia Jovem não é uma garantia de emprego. Mas tem como objetivo dar aos jovens, o mais rapidamente possível, uma oportunidade para apostar na sua qualificação e estar em contacto com o mercado de trabalho, com vista a combater a inatividade e o desemprego dos jovens."
@@ -164,7 +165,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Principais objetivos"
                 android:textColor="@color/green"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -175,7 +176,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Aumentar as qualificações dos jovens. \nFacilitar a transição para o mercado de trabalho. Reduzir o desemprego jovem."
                 android:textColor="@color/dark_blue"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
         </androidx.cardview.widget.CardView>
 
@@ -200,7 +201,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="A quem se destina"
                 android:textColor="@color/blue"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -211,7 +212,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Em Portugal, a Garantia Jovem vai apoiar os jovens até aos 29 anos (inclusive), que não estão nem a trabalhar nem inseridos no sistema educativo e formativo."
                 android:textColor="@color/dark_blue"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
 
         </androidx.cardview.widget.CardView>
@@ -238,7 +239,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="É para ti!"
                 android:textColor="@color/orange"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -249,7 +250,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Se tens menos de 30 anos de idade. Se não estás a trabalhar. Se não estás a estudar, em formação ou em estágio."
                 android:textColor="@color/dark_blue"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
 
         </androidx.cardview.widget.CardView>
@@ -276,7 +277,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_semibold"
                 android:text="Oferecemos"
                 android:textColor="@color/pink"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="323dp"
@@ -287,7 +288,7 @@ android:fillViewport="true" xmlns:android="http://schemas.android.com/apk/res/an
                 android:fontFamily="@font/montserrat_regular"
                 android:text="De acordo com as tuas preferências e necessidades a Garantia Jovem oferece-te várias oportunidades ao nível da participação em medidas de ensino, formação e emprego."
                 android:textColor="@color/dark_blue"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
 
         </androidx.cardview.widget.CardView>
