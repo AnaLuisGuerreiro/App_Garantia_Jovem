@@ -7,7 +7,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
+import com.example.myapplication.Models.ModelClass;
+=======
 import com.example.myapplication.Views.ModelClass;
+>>>>>>> main
 
 import java.util.ArrayList;
 
