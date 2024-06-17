@@ -7,6 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.UserProfile"
     tools:ignore="ScrollViewCount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -201,6 +205,136 @@
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            app:cardCornerRadius="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.146"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/textView41"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pedido" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="Submetido"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    >
+
+
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="17sp"
+                android:textColor="@color/dark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estágio" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/dark_blue"
+                android:textSize="12sp"
+                android:text="O seu pedido está na(o)"
+                />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"
+                android:textColor="@color/dark_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serviço de Emprego do Porto" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="105dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/dark_blue"
+                android:text="Morada"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="14sp"
+                android:textColor="@color/dark_blue"
+                android:text="R. Guedes de Azevedo, 213, 4049-008 PORTO" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/dark_blue"
+                    android:text="Contactar:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/orange"
+                    android:background="@drawable/underline_text"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="220989280"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
         <Button
             android:id="@+id/buttonNewRequest"
             android:layout_width="wrap_content"
@@ -213,5 +347,5 @@
             app:cornerRadius="10dp"
             android:textSize="18sp" />
     </LinearLayout>
+    </ScrollView>
 </androidx.core.widget.NestedScrollView>
-

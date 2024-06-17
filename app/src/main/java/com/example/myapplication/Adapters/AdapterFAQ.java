@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.Views.Views.ModelClass;
+import com.example.myapplication.Views.ModelClass;
 
 import java.util.ArrayList;
 
