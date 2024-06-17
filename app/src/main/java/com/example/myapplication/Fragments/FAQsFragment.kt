@@ -1,14 +1,21 @@
-package com.example.myapplication.Views
+package com.example.myapplication.Fragments
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.Adapters.RecyclerViewAdapter
 import com.example.myapplication.FAQ
 import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentFaqsBinding
 
-class FAQsActivity : AppCompatActivity() {
+
+class FAQsFragment : Fragment() {
+
+    private lateinit var binding: FragmentFaqsBinding
 
     private lateinit var questions: Array<String>
     private lateinit var answers: Array<String>
@@ -16,11 +23,17 @@ class FAQsActivity : AppCompatActivity() {
     private lateinit var recView: RecyclerView
     private lateinit var itemArrayList: ArrayList<FAQ>
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_faqs)
 
-        recView = findViewById(R.id.recycler_view)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        binding = FragmentFaqsBinding.inflate(inflater, container, false)
+        val view = binding.root
+        return view
+
+        recView = binding.recyclerView
 
 
         questions = arrayOf(
@@ -52,7 +65,7 @@ class FAQsActivity : AppCompatActivity() {
         )
 
 
-        recView.layoutManager = LinearLayoutManager(this)
+        recView.layoutManager = LinearLayoutManager(requireContext())
         recView.setHasFixedSize(true)
 
 
@@ -62,9 +75,10 @@ class FAQsActivity : AppCompatActivity() {
 
         recView.adapter = RecyclerViewAdapter(itemArrayList)
 
+        return view
+
+
     }
-
-
     private fun getData() {
 
         for(i in questions.indices) {

@@ -29,9 +29,6 @@
             android:name=".Views.SelectedInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.FAQsActivity"
-            android:exported="false" />
-        <activity
             android:name=".Views.PoliticsActivity"
             android:exported="false" />
         <activity
