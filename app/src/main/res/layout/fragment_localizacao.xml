@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Views.LocalizacaoActivity">
+    tools:context=".Fragments.WhereAreWeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -17,7 +17,7 @@
             android:layout_width="247dp"
             android:layout_height="227dp"
             android:layout_marginStart="176dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="1dp"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -27,8 +27,8 @@
             android:id="@+id/Subtitle"
             android:layout_width="277dp"
             android:layout_height="178dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="ONDE ESTAMOS"
             android:textColor="@color/green"
@@ -180,6 +180,7 @@
 
         <Spinner
             android:id="@+id/spinner"
+            android:textColor="@color/dark_blue"
             android:layout_width="150dp"
             android:layout_height="41dp"
             android:layout_marginTop="156dp"

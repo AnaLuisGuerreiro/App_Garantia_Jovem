@@ -125,7 +125,7 @@ class SelectedInfoActivity : AppCompatActivity() {
             override fun updateDrawState(ds: android.text.TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = true
-                ds.color = ContextCompat.getColor(this@SelectedInfoActivity,R.color.black)
+                ds.color = ContextCompat.getColor(this@SelectedInfoActivity,R.color.dark_blue)
             }
         }
 
@@ -150,7 +150,7 @@ class SelectedInfoActivity : AppCompatActivity() {
             override fun updateDrawState(ds: android.text.TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = true
-                ds.color = ContextCompat.getColor(this@SelectedInfoActivity, R.color.black)
+                ds.color = ContextCompat.getColor(this@SelectedInfoActivity, R.color.dark_blue)
             }
         }
 

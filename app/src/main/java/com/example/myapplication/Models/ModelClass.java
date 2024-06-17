@@ -1,4 +1,8 @@
+<<<<<<< HEAD:app/src/main/java/com/example/myapplication/Models/ModelClass.java
 package com.example.myapplication.Models;
+=======
+package com.example.myapplication.Views;
+>>>>>>> main:app/src/main/java/com/example/myapplication/Views/ModelClass.java
 
 public class ModelClass {
 

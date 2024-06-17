@@ -26,12 +26,12 @@ android:fillViewport="true">
             android:id="@+id/imageView1"
             android:layout_width="250dp"
             android:layout_height="235dp"
-            android:layout_marginStart="212dp"
+            android:layout_marginStart="216dp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.062"
+            app:layout_constraintVertical_bias="0.032"
             tools:ignore="MissingConstraints"
             tools:src="@drawable/rapaz_sobre" />
 
@@ -54,12 +54,14 @@ android:fillViewport="true">
             android:layout_width="230dp"
             android:layout_height="132dp"
             android:layout_marginStart="28dp"
+
             android:fontFamily="@font/montserrat_bold"
             android:text="É um compromisso para que gradualmente e num prazo de 4 meses após o jovem sair do sistema de ensino ou do mercado de trabalho, lhe seja feita uma oferta de emprego, de continuação dos estudos, de formação profissional ou de estágio."
+            android:textColor="@color/dark_blue"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="178dp" />
+            tools:layout_editor_absoluteY="177dp" />
 
         <View
             android:id="@+id/horizontalLine2"
@@ -131,12 +133,14 @@ android:fillViewport="true">
             android:layout_width="346dp"
             android:layout_height="127dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="24dp"
             android:layout_marginRight="30dp"
             android:fontFamily="@font/montserrat_regular"
+
             android:text="A Garantia Jovem não é uma garantia de emprego. Mas tem como objetivo dar aos jovens, o mais rapidamente possível, uma oportunidade para apostar na sua qualificação e estar em contacto com o mercado de trabalho, com vista a combater a inatividade e o desemprego dos jovens."
+            android:textColor="@color/dark_blue"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Description" />
 
@@ -171,7 +175,7 @@ android:fillViewport="true">
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Aumentar as qualificações dos jovens. \nFacilitar a transição para o mercado de trabalho. Reduzir o desemprego jovem."
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:textSize="12sp" />
 
         </androidx.cardview.widget.CardView>
@@ -207,7 +211,7 @@ android:fillViewport="true">
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Em Portugal, a Garantia Jovem vai apoiar os jovens até aos 29 anos (inclusive), que não estão nem a trabalhar nem inseridos no sistema educativo e formativo."
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:textSize="12sp" />
 
 
@@ -245,7 +249,7 @@ android:fillViewport="true">
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="Se tens menos de 30 anos de idade. Se não estás a trabalhar. Se não estás a estudar, em formação ou em estágio."
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:textSize="12sp" />
 
 
@@ -283,7 +287,7 @@ android:fillViewport="true">
                 android:layout_marginBottom="5dp"
                 android:fontFamily="@font/montserrat_regular"
                 android:text="De acordo com as tuas preferências e necessidades a Garantia Jovem oferece-te várias oportunidades ao nível da participação em medidas de ensino, formação e emprego."
-                android:textColor="@color/black"
+                android:textColor="@color/dark_blue"
                 android:textSize="12sp" />
 
 
@@ -316,7 +320,7 @@ android:fillViewport="true">
 
 \t2.\tParceiros articulam de forma a encaminhar os jovens para as soluções mais adequadas, de acordo com as suas expectativas e necessidades.\n\n
 \t3.\tJovens participam sucessivamente nas ações necessárias para completar o seu percurso educativo e profissional até ser integrado no mercado de trabalho."
-            android:textColor="@color/black"
+            android:textColor="@color/dark_blue"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
