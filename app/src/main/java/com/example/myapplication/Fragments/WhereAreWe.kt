@@ -10,11 +10,11 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentLocalizacaoBinding
+import com.example.myapplication.databinding.FragmentWhereAreWeBinding
 
 class WhereAreWe : Fragment() {
 
-    private var _binding: FragmentLocalizacaoBinding? = null
+    private var _binding: FragmentWhereAreWeBinding? = null
     private val binding get() = _binding!!
 
     val listaConcelhos = arrayOf("Concelhos","Abrantes","Águeda","Aguiar da Beira","Alandroal","Albergaria-a-Velha","Albufeira","Alcácer do Sal","Almada","Arouca","Baião", "Barcelos", "Barrancos", "Barreiro", "Batalha", "Beja", "Belmonte", "Benavente", "Bombarral", "Borba", "Boticas", "Braga","Espinho","Guarda", "Moita", "Portel")
@@ -23,7 +23,7 @@ class WhereAreWe : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentLocalizacaoBinding.inflate(inflater, container, false)
+        _binding = FragmentWhereAreWeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
