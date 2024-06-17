@@ -54,6 +54,16 @@ class UserProfile : Fragment() {
             buttonNewRequest.visibility = View.VISIBLE
             cardView.visibility = View.VISIBLE
         }
+
+        binding.buttonNewRequest.setOnClickListener {
+            loadFragment(NovoPedidoFragment())
+        }
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.commit()
     }
 }
 

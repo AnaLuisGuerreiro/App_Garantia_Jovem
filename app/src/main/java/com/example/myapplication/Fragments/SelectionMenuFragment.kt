@@ -25,7 +25,18 @@ class SelectionMenuFragment : Fragment() {
         val imageView2: ImageView = binding.imageView2
         imageView2.setImageResource(R.drawable.image3)
 
+            binding.criaOTeuEmprego.setOnClickListener {
+                loadFragment(SelectedInfoFragment())
+            }
+
+
         return view
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.commit()
     }
 
 }
