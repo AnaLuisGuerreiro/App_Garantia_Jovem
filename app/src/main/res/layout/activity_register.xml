@@ -335,8 +335,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/choiceOfUser"
+            <Spinner
+                android:id="@+id/spinnerRegisto"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginStart="18dp"
@@ -344,8 +344,9 @@
                 android:ems="10"
                 android:fontFamily="@font/montserrat_regular"
                 android:hint="O que procuras?"
-                android:inputType="text"
-                tools:ignore="MissingConstraints,TextFields" />
+                tools:ignore="MissingConstraints">
+            </Spinner>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
