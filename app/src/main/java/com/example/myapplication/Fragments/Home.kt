@@ -49,6 +49,17 @@ class Home : Fragment() {
             val intent = Intent(requireContext(), RegisterActivity::class.java)
             startActivity(intent)
         }
+
+
+        binding.buttonJobs.setOnClickListener{
+            loadFragment(SelectionMenuFragment())
+        }
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.commit()
     }
 }
 
