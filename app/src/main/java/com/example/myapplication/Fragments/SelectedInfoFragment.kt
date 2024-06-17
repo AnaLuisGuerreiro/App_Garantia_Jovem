@@ -1,4 +1,4 @@
-package com.example.myapplication.Views
+package com.example.myapplication.Fragments
 
 import android.animation.LayoutTransition
 import android.content.Intent
@@ -9,57 +9,70 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivitySelectedInfoBinding
-import com.example.myapplication.databinding.ActivitySelectionMenuBinding
 
-class SelectedInfoActivity : AppCompatActivity() {
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
-    private val binding by lazy {
-        ActivitySelectedInfoBinding.inflate(layoutInflater)
-    }
+/**
+ * A simple [Fragment] subclass.
+ * Use the [SelectedInfoFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class SelectedInfoFragment : Fragment() {
 
-    private lateinit var information1:TextView
+    private var _binding: ActivitySelectedInfoBinding? = null
+    private val binding get() = _binding!!
+
+    private lateinit var information1: TextView
     private lateinit var layout1: LinearLayout
     private lateinit var expandable1: CardView
 
-    private lateinit var information2:TextView
+    private lateinit var information2: TextView
     private lateinit var layout2: LinearLayout
     private lateinit var expandable2: CardView
 
-    private lateinit var information3:TextView
+    private lateinit var information3: TextView
     private lateinit var layout3: LinearLayout
     private lateinit var expandable3: CardView
 
-    private lateinit var information4:TextView
+    private lateinit var information4: TextView
     private lateinit var layout4: LinearLayout
     private lateinit var expandable4: CardView
 
-    private lateinit var information5:TextView
+    private lateinit var information5: TextView
     private lateinit var layout5: LinearLayout
     private lateinit var expandable5: CardView
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(binding.root)
-        val imageView1: ImageView = findViewById(R.id.imageView1)
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        _binding = ActivitySelectedInfoBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val imageView1: ImageView = view.findViewById(R.id.imageView1)
         imageView1.setImageResource(R.drawable.image2)
 
-
-        information1 = findViewById(R.id.information1)
-        layout1 = findViewById(R.id.layouts1)
-        expandable1 = findViewById(R.id.expandable1)
+        information1 = view.findViewById(R.id.information1)
+        layout1 = view.findViewById(R.id.layouts1)
+        expandable1 = view.findViewById(R.id.expandable1)
 
         layout1.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
         expandable1.setOnClickListener {
@@ -67,9 +80,9 @@ class SelectedInfoActivity : AppCompatActivity() {
             information1.visibility = v
         }
 
-        information2 = findViewById(R.id.information2)
-        layout2 = findViewById(R.id.layouts2)
-        expandable2 = findViewById(R.id.expandable2)
+        information2 = view.findViewById(R.id.information2)
+        layout2 = view.findViewById(R.id.layouts2)
+        expandable2 = view.findViewById(R.id.expandable2)
 
         layout2.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
         expandable2.setOnClickListener {
@@ -77,9 +90,9 @@ class SelectedInfoActivity : AppCompatActivity() {
             information2.visibility = v
         }
 
-        information3 = findViewById(R.id.information3)
-        layout3 = findViewById(R.id.layouts3)
-        expandable3 = findViewById(R.id.expandable3)
+        information3 = view.findViewById(R.id.information3)
+        layout3 = view.findViewById(R.id.layouts3)
+        expandable3 = view.findViewById(R.id.expandable3)
 
         layout3.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
         expandable3.setOnClickListener {
@@ -87,9 +100,9 @@ class SelectedInfoActivity : AppCompatActivity() {
             information3.visibility = v
         }
 
-        information4 = findViewById(R.id.information4)
-        layout4 = findViewById(R.id.layouts4)
-        expandable4 = findViewById(R.id.expandable4)
+        information4 = view.findViewById(R.id.information4)
+        layout4 = view.findViewById(R.id.layouts4)
+        expandable4 = view.findViewById(R.id.expandable4)
 
         layout4.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
         expandable4.setOnClickListener {
@@ -97,9 +110,9 @@ class SelectedInfoActivity : AppCompatActivity() {
             information4.visibility = v
         }
 
-        information5 = findViewById(R.id.information5)
-        layout5 = findViewById(R.id.layouts5)
-        expandable5 = findViewById(R.id.expandable5)
+        information5 = view.findViewById(R.id.information5)
+        layout5 = view.findViewById(R.id.layouts5)
+        expandable5 = view.findViewById(R.id.expandable5)
 
         layout5.layoutTransition.enableTransitionType(LayoutTransition.CHANGING)
         expandable5.setOnClickListener {
@@ -107,12 +120,12 @@ class SelectedInfoActivity : AppCompatActivity() {
             information5.visibility = v
         }
 
-        setupClickableText()
+        setupClickableText(view)
     }
 
-    private fun setupClickableText() {
+    private fun setupClickableText(view: View) {
         // Example: Making a specific word in information1 clickable
-        val textView = findViewById<TextView>(R.id.information2)
+        val textView = view.findViewById<TextView>(R.id.information2)
         val text = "Jovens à procura do primeiro emprego ou desempregados, com idade entre os 18 e os 35 anos, em situação de desemprego involuntário ou inscritos há mais de 9 meses. \n\nTens de estar inscrito no IEFP. \n\nConsulta aqui."
 
         val spannableString = SpannableString(text)
@@ -125,7 +138,7 @@ class SelectedInfoActivity : AppCompatActivity() {
             override fun updateDrawState(ds: android.text.TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = true
-                ds.color = ContextCompat.getColor(this@SelectedInfoActivity,R.color.dark_blue)
+                ds.color = ContextCompat.getColor(requireContext(), R.color.dark_blue)
             }
         }
 
@@ -137,7 +150,7 @@ class SelectedInfoActivity : AppCompatActivity() {
         textView.movementMethod = LinkMovementMethod.getInstance()
         textView.highlightColor = Color.TRANSPARENT
 
-        val textView3 = findViewById<TextView>(R.id.information5)
+        val textView3 = view.findViewById<TextView>(R.id.information5)
         val text3 = "Jovens até aos 29 anos com especiais dificuldades de acesso ao mercado de trabalho e em risco de exclusão social, que possuam uma ideia de negócio viável, perfil de empreendedor e formulem e apresentem projetos viáveis para criar postos de trabalho.\n\nMais informações, candidaturas aqui."
 
         val spannableString3 = SpannableString(text3)
@@ -150,7 +163,7 @@ class SelectedInfoActivity : AppCompatActivity() {
             override fun updateDrawState(ds: android.text.TextPaint) {
                 super.updateDrawState(ds)
                 ds.isUnderlineText = true
-                ds.color = ContextCompat.getColor(this@SelectedInfoActivity, R.color.dark_blue)
+                ds.color = ContextCompat.getColor(requireContext(), R.color.dark_blue)
             }
         }
 
@@ -161,8 +174,10 @@ class SelectedInfoActivity : AppCompatActivity() {
         textView3.text = spannableString3
         textView3.movementMethod = LinkMovementMethod.getInstance()
         textView3.highlightColor = Color.TRANSPARENT
-
-
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
