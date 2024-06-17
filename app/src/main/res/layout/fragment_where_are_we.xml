@@ -14,25 +14,26 @@
 
         <ImageView
             android:id="@+id/mapa"
-            android:layout_width="247dp"
-            android:layout_height="227dp"
-            android:layout_marginStart="176dp"
-            android:layout_marginTop="32dp"
+            android:layout_width="208dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="1dp"
             android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/mapa" />
 
         <TextView
             android:id="@+id/Subtitle"
-            android:layout_width="277dp"
-            android:layout_height="178dp"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="35dp"
+            android:layout_width="221dp"
+            android:layout_height="116dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="1dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="ONDE ESTAMOS"
             android:textColor="@color/green"
-            android:textSize="40sp"
+            android:textSize="38sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -182,9 +183,9 @@
             android:id="@+id/spinner"
             android:layout_width="150dp"
             android:layout_height="41dp"
-            android:layout_marginTop="156dp"
+            android:layout_marginTop="132dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintHorizontal_bias="0.107"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
