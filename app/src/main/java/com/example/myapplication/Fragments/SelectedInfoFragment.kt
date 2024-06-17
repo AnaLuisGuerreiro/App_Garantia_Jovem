@@ -9,7 +9,6 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,8 +17,9 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.example.myapplication.R
-import com.example.myapplication.databinding.ActivitySelectedInfoBinding
+import com.example.myapplication.databinding.FragmentSelectedInfoBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +33,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class SelectedInfoFragment : Fragment() {
 
-    private var _binding: ActivitySelectedInfoBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentSelectedInfoBinding
 
     private lateinit var information1: TextView
     private lateinit var layout1: LinearLayout
@@ -60,7 +59,7 @@ class SelectedInfoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = ActivitySelectedInfoBinding.inflate(inflater, container, false)
+        binding = FragmentSelectedInfoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -178,6 +177,5 @@ class SelectedInfoFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
     }
 }
