@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="233dp"
+            android:layout_height="259dp"
+            android:layout_marginStart="188dp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rapariga"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="196dp"
+            android:layout_height="224dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="DEFENDEMOS A PROTEÇÃO DE DADOS"
+            android:textColor="@color/green"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_subtitle"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Regulamento Geral Proteção de Dados (RGPD)"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/text_view"
+            android:layout_width="370dp"
+            android:layout_height="642dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text='Desde o dia 25 de maio de 2018 que é aplicável em todos os países da União Europeia uma nova legislação sobre a proteção de dados: o Regulamento Geral sobre a Proteção de Dados.\n\nOs  nossos registos incluem dados que foram obtidos ao longo dos nossos contactos (por ex. recolhidos no âmbito da sua inscrição nos nossos serviços), pelo que o IEFP, I.P. sempre pautou a sua atuação pelo respeito e privacidade dos dados dos seus utentes, o que pretende manter e reforçar com a aplicação do novo Regulamento.\n\nPara  além das situações em que tratamos os seus dados pessoais, no âmbito dos serviços que prestamos e do cumprimento das imposições legais a que estamos obrigados, tratamos, ainda, os seus dados para outros fins.\n\nO  IEFP, I.P. conservará os seus dados pelo período necessário e de acordo com as imposições legais, nomeadamente os prazos de conservação arquivística.\n\nPoderá  contactar-nos para qualquer questão relacionada com a proteção dos seus dados, dirigindo o seu pedido por escrito com o assunto "Proteção de Dados Pessoais" para o email: protecao.dados@iefp.pt.'
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_subtitle" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

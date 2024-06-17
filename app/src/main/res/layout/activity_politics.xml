@@ -4,8 +4,8 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="800dp"
-    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
 
@@ -198,8 +198,8 @@
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView19"
-        android:layout_width="340dp"
-        android:layout_height="317dp"
+        android:layout_width="344dp"
+        android:layout_height="373dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="O IEFP, I.P., dispõe de medidas de segurança técnicas e organizativas com vista à proteção dos dados pessoais dos seus Titulares, nomeadamente no que respeita à utilização indevida, não autorizada, acesso ilegal ou divulgação, perda, alteração, danificação ou destruição. Essas medidas incluem:\n Segurança Física, garantida através do controlo de acessos às instalações do IEFP, I.P., e da destruição física dos suportes que contenham dados pessoais em formato digital.\n Segurança tecnológica, garantida mediante a aplicação de medidas tecnológicas de proteção da informação, como por exemplo a utilização de protocolos seguros e a monitorização dos nossos sistemas e data centers.\n Segurança Organizacional, garantida mediante o conhecimento da importância e das formas de proteção dos Dados Pessoais, de acordo com as políticas de segurança da informação implementadas na Instituição."
@@ -225,8 +225,8 @@
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView21"
-        android:layout_width="340dp"
-        android:layout_height="195dp"
+        android:layout_width="338dp"
+        android:layout_height="213dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="O IEFP, I.P., como Responsável pelo Tratamento dos dados pessoais recolhidos no Portal, recorre a entidades externas contratadas no âmbito da criação, manutenção e gestão do Portal. Estas entidades podem ter acesso aos dados pessoais e atuam exclusivamente de acordo com as instruções e orientações do IEFP, I.P., com a garantia de que adotam as medidas de segurança técnicas e organizativas adequadas exigidas no Regulamento para assegurar a confidencialidade, integridade e disponibilidade da informação em causa."
@@ -252,8 +252,8 @@
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView23"
-        android:layout_width="340dp"
-        android:layout_height="230dp"
+        android:layout_width="349dp"
+        android:layout_height="261dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="Sem prejuízo dos direitos que assistem ao Titular dos dados tratados no âmbito desta Declaração de Privacidade de Dados, os mesmos serão conservados enquanto a conta de utilizador permanecer ativa e enquanto estiver pendente ou em execução qualquer solicitação, ação ou serviço, efetuada, apresentada ou requerida através do Portal.\n A eliminação ou inativação da conta de utilizador não implica a eliminação de dados e informações relativas ao mesmo enquanto utente ou no âmbito da sua relação com o IEFP, I.P., os quais serão mantidos de acordo com as obrigações legais de conservação dos dados em causa."
@@ -388,8 +388,8 @@
 
     <com.codesgood.views.JustifiedTextView
         android:id="@+id/textView33"
-        android:layout_width="340dp"
-        android:layout_height="237dp"
+        android:layout_width="338dp"
+        android:layout_height="234dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="No final do processo de registo obterá uma palavra-chave, passando, a partir desse momento, a ser responsável por todas as atividades que ocorram sob a sua utilização, bem como por manter a confidencialidade da mesma. Em caso de suspeita de uso não autorizado da sua palavra-chave ou de qualquer outra quebra de segurança, recomendamos que informe imediatamente o IEFP, I.P.. Para que a sua conta não seja acedida por terceiros não autorizados, recomendamos ainda que no final de cada sessão saia da sua conta e feche a janela do navegador (browser)."
@@ -418,7 +418,7 @@
         android:layout_width="339dp"
         android:layout_height="103dp"
         android:layout_marginTop="20dp"
-        android:text="As hiperligações listadas na área de &quot;Links&quot; são feitas para o exterior do Portal e abertas numa nova janela. O IEFP, I.P., não se responsabiliza nem pelos conteúdos presentes nessas páginas, nem pela atualidade dos mesmos.\n"
+        android:text='As hiperligações listadas na área de "Links" são feitas para o exterior do Portal e abertas numa nova janela. O IEFP, I.P., não se responsabiliza nem pelos conteúdos presentes nessas páginas, nem pela atualidade dos mesmos.\n'
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
