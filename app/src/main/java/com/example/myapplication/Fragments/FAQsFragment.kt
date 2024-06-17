@@ -31,6 +31,10 @@ class FAQsFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentFaqsBinding.inflate(inflater, container, false)
         val view = binding.root
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
         recView = binding.recyclerView
 
