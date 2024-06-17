@@ -1,5 +1,6 @@
 package com.example.myapplication.Views
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.myapplication.Fragments.ContactUs
+import com.example.myapplication.Fragments.FAQsFragment
 import com.example.myapplication.Fragments.Home
 import com.example.myapplication.Fragments.PoliticsFragment
 import com.example.myapplication.Fragments.Rgpd
@@ -40,6 +42,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        if (savedInstanceState == null) {
+            loadFragment(UserProfile())
+        }
+
         loadFragment(Home())
 
         // -------------------- Top navbar, buttons listeners
@@ -49,7 +55,8 @@ class MainActivity : AppCompatActivity() {
         topAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.userIcon -> {
-                    loadFragment(UserProfile())
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
@@ -79,6 +86,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.privacy ->{
                     loadFragment(PoliticsFragment())
+                    true
+                }
+                R.id.faqs ->{
+                    loadFragment(FAQsFragment())
                     true
                 }
                 else -> false
