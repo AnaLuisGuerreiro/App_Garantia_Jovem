@@ -14,6 +14,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31" >
         <activity
+            android:name=".Views.RGPD"
+            android:exported="false"/>
+        <activity
             android:name=".Views.SelectionMenuActivity"
             android:exported="false" />
         <activity
@@ -26,8 +29,13 @@
             android:name=".Views.SelectedInfoActivity"
             android:exported="false" />
         <activity
+            android:name=".Views.FAQsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.PoliticsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Views.MainActivity"
-
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,12 +43,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity
-        android:name=".Views.PoliticsActivity"
-        android:exported="false"/>
-        <activity
-            android:name=".Views.FAQsActivity"
-            android:exported="false" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
