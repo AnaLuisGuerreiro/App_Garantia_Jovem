@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="233dp"
+            android:layout_height="259dp"
+            android:layout_marginStart="204dp"
+            android:layout_marginTop="-16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rapariga"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="196dp"
+            android:layout_height="224dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="DECLARAÇÃO DE PRIVACIDADE DE DADOS E TERMOS DE UTILIZAÇÃO"
+            android:textColor="@color/green"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Política de Privacidade de Dados"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/webview"
+            android:layout_width="340dp"
+            android:layout_height="214dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="38dp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="No âmbito da sua atividade, o Instituto do Emprego e Formação Profissional, IP (adiante designado por IEFP, I.P.) realiza a recolha de dados pessoais neste Portal e garante que o seu tratamento é feito de acordo com as regras de Proteção da Privacidade de dados decorrentes do Regulamento Geral de Proteção de Dados (Regulamento [EU] 2016/679), adiante designado por RGPD, e demais legislação nacional e da UE aplicável, garantindo por esta via todos os direitos e garantias relativos à privacidade de dados pessoais dos Titulares."
+            android:textAlignment="gravity"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.383"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Dados Pessoais"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/webview"
+            tools:ignore="UnknownId" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView8"
+            android:layout_width="340dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Encontram-se aqui incluídos os dados pessoais transmitidos pelos seus titulares, registados neste Portal, bem como os recolhidos pelo IEFP, I.P. relativos aos visitantes do mesmo."
+            android:textAlignment="gravity"
+            android:textColor="@color/dark_blue"
+
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Responsável pelo tratamento de dados"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="MissingConstraints" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView13"
+            android:layout_width="340dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_blue"
+
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O responsável pelo tratamento de dados recolhidos através deste Portal é o IEFP, I.P..\n Serviços Centrais do IEFP I.P.\n Rua de Xabregas 52,\n 1949-003 Lisboa\n Tel: 21 580 30 00\n Para eventuais esclarecimentos deverá contactar protecao.dados@iefp.pt"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="340dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Finalidade da recolha e tratamento e Base jurídica para o seu processamento"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView15"
+            android:layout_width="340dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_blue"
+
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Os dados pessoais recolhidos pelo IEFP, I.P., têm como finalidade o cumprimento das atribuições cometidas pela sua Lei Orgânica e demais legislação aplicável ao emprego e formação profissional, com a garantia dos direitos dos Titulares dos dados incluídos nos serviços prestados pela Instituição."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Direitos dos Titulares dos Dados"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView17"
+            android:layout_width="340dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O Titular dos dados tem os direitos previstos no RGPD."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Medidas de Segurança"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView19"
+            android:layout_width="344dp"
+            android:layout_height="373dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O IEFP, I.P., dispõe de medidas de segurança técnicas e organizativas com vista à proteção dos dados pessoais dos seus Titulares, nomeadamente no que respeita à utilização indevida, não autorizada, acesso ilegal ou divulgação, perda, alteração, danificação ou destruição. Essas medidas incluem:\n Segurança Física, garantida através do controlo de acessos às instalações do IEFP, I.P., e da destruição física dos suportes que contenham dados pessoais em formato digital.\n Segurança tecnológica, garantida mediante a aplicação de medidas tecnológicas de proteção da informação, como por exemplo a utilização de protocolos seguros e a monitorização dos nossos sistemas e data centers.\n Segurança Organizacional, garantida mediante o conhecimento da importância e das formas de proteção dos Dados Pessoais, de acordo com as políticas de segurança da informação implementadas na Instituição."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Subcontratação"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView21"
+            android:layout_width="338dp"
+            android:layout_height="213dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark_blue"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O IEFP, I.P., como Responsável pelo Tratamento dos dados pessoais recolhidos no Portal, recorre a entidades externas contratadas no âmbito da criação, manutenção e gestão do Portal. Estas entidades podem ter acesso aos dados pessoais e atuam exclusivamente de acordo com as instruções e orientações do IEFP, I.P., com a garantia de que adotam as medidas de segurança técnicas e organizativas adequadas exigidas no Regulamento para assegurar a confidencialidade, integridade e disponibilidade da informação em causa."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="340dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Conservação dos Dados (Período de Retenção dos dados)"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView23"
+            android:layout_width="349dp"
+            android:layout_height="261dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Sem prejuízo dos direitos que assistem ao Titular dos dados tratados no âmbito desta Declaração de Privacidade de Dados, os mesmos serão conservados enquanto a conta de utilizador permanecer ativa e enquanto estiver pendente ou em execução qualquer solicitação, ação ou serviço, efetuada, apresentada ou requerida através do Portal.\n A eliminação ou inativação da conta de utilizador não implica a eliminação de dados e informações relativas ao mesmo enquanto utente ou no âmbito da sua relação com o IEFP, I.P., os quais serão mantidos de acordo com as obrigações legais de conservação dos dados em causa."
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Armazenamento e transferência dos dados a nível transfronteiriço"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView25"
+            android:layout_width="340dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O IEFP, I.P., pode transferir dados dos seus Titulares para países fora do espaço europeu no âmbito das suas atribuições e com consentimento explicito dos mesmos."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Alterações a esta Declaração"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView27"
+            android:layout_width="340dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O IEFP, I.P., reserva-se no direito de revisão ou modificação desta Declaração, com observância do Regulamento (EU) 2016/679."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Política de Utilização de Cookies"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView29"
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O Portal recorre a etiquetas de Software, designadas por &quot;Cookies&quot;, para identificar os visitantes das suas páginas por forma a formatar a informação apresentada com base nas preferências dos seus navegadores da internet e obter informação estatística relacionada com a utilização do Portal."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="340dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Utilizadores registados (deveres e recomendações)"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView31"
+            android:layout_width="340dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="O IEFP, I.P, reserva-se no direito de suspender ou cancelar uma conta de utilizador caso verifique que a informação fornecida é falsa, incorreta, desatualizada, desadequada ou incompleta. A suspensão ou cancelamento de uma determinada conta apenas ocorrerá após notificação ao respetivo utilizador."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="340dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Recomendações relativas à conta do utilizador, palavra-chave e segurança"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView33"
+            android:layout_width="338dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="No final do processo de registo obterá uma palavra-chave, passando, a partir desse momento, a ser responsável por todas as atividades que ocorram sob a sua utilização, bem como por manter a confidencialidade da mesma. Em caso de suspeita de uso não autorizado da sua palavra-chave ou de qualquer outra quebra de segurança, recomendamos que informe imediatamente o IEFP, I.P.. Para que a sua conta não seja acedida por terceiros não autorizados, recomendamos ainda que no final de cada sessão saia da sua conta e feche a janela do navegador (browser)."
+            android:textSize="14sp"
+            android:textColor="@color/dark_blue"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="340dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Hiperligações externas"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:id="@+id/textView35"
+            android:layout_width="339dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="20dp"
+            android:text='As hiperligações listadas na área de "Links" são feitas para o exterior do Portal e abertas numa nova janela. O IEFP, I.P., não se responsabiliza nem pelos conteúdos presentes nessas páginas, nem pela atualidade dos mesmos.\n'
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/dark_blue"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

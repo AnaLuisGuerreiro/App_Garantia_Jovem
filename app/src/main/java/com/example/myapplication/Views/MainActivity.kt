@@ -9,6 +9,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.example.myapplication.Fragments.ContactUs
 import com.example.myapplication.Fragments.Home
+import com.example.myapplication.Fragments.PoliticsFragment
+import com.example.myapplication.Fragments.Rgpd
+import com.example.myapplication.Fragments.SobreFragment
 import com.example.myapplication.Fragments.UserProfile
 import com.example.myapplication.Fragments.WhereAreWe
 import com.example.myapplication.R
@@ -66,9 +69,27 @@ class MainActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                     true
                 }
+                R.id.aboutUs ->{
+                    loadFragment(SobreFragment())
+                    true
+                }
+                R.id.rgpd ->{
+                    loadFragment(Rgpd())
+                    true
+                }
+                R.id.privacy ->{
+                    loadFragment(PoliticsFragment())
+                    true
+                }
                 else -> false
             }
         }
+
+
+
+
+
+
 
         // --------------      Bottom navbar, buttons listeners
         bottomNavigationView = binding.bottomNav
@@ -94,6 +115,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
 
     private fun loadFragment(fragment: Fragment) {
         val transaction = supportFragmentManager.beginTransaction()
