@@ -34,6 +34,8 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
+        val i = intent
+
         drawerLayout = binding.main
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
@@ -42,11 +44,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        if (savedInstanceState == null) {
+        if (i.extras?.getString("codigoFrag").equals("userProfile")) {
             loadFragment(UserProfile())
+        } else {
+            loadFragment(Home())
         }
 
-        loadFragment(Home())
 
         // -------------------- Top navbar, buttons listeners
         val topAppBar = binding.topAppBar
@@ -59,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
+
                 else -> false
             }
         }
@@ -76,30 +80,30 @@ class MainActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                     true
                 }
-                R.id.aboutUs ->{
+
+                R.id.aboutUs -> {
                     loadFragment(SobreFragment())
                     true
                 }
-                R.id.rgpd ->{
+
+                R.id.rgpd -> {
                     loadFragment(Rgpd())
                     true
                 }
-                R.id.privacy ->{
+
+                R.id.privacy -> {
                     loadFragment(PoliticsFragment())
                     true
                 }
-                R.id.faqs ->{
+
+                R.id.faqs -> {
                     loadFragment(FAQsFragment())
                     true
                 }
+
                 else -> false
             }
         }
-
-
-
-
-
 
 
         // --------------      Bottom navbar, buttons listeners
@@ -113,20 +117,22 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(WhereAreWe())
                     true
                 }
+
                 R.id.bottom_home -> {
                     loadFragment(Home())
                     true
                 }
+
                 R.id.bottom_phone -> {
                     loadFragment(ContactUs<Any>())
                     true
                 }
+
                 else -> false
             }
         }
 
     }
-
 
 
     private fun loadFragment(fragment: Fragment) {
