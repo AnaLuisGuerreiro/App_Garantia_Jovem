@@ -1,12 +1,12 @@
 package com.example.myapplication.Views
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import com.example.myapplication.Fragments.UserProfile
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityLoginBinding
 
@@ -27,7 +27,11 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.buttonLogin.setOnClickListener {
-            loadFragment(UserProfile())
+            val i = Intent(this, MainActivity::class.java)
+            i.putExtra("codigoFrag","userProfile")
+            startActivity(i)
+
+            //loadFragment(UserProfile())
         }
     }
 

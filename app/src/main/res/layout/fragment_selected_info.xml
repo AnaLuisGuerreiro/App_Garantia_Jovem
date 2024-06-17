@@ -164,6 +164,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/text_o_que_e"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
@@ -211,6 +212,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/text_para_quem"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
@@ -257,6 +259,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/text_como_funciona"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
@@ -325,6 +328,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/o_que_e_2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
@@ -371,6 +375,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/text_para_quem_2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/montserrat_semibold"
