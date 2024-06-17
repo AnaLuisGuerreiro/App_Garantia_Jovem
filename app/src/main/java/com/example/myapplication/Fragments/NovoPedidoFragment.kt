@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.Spinner
 import com.example.myapplication.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -21,6 +23,9 @@ class NovoPedidoFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    val listaOpcoes = arrayOf("O que procuras?", "Emprego", "Estágio", "Estudar", "Aprender Profissão", "Estudar/Trabalhar no Estrangeiro", "Ajuda")
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,7 +40,15 @@ class NovoPedidoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_novo_pedido, container, false)
+        val view = inflater.inflate(R.layout.fragment_novo_pedido, container, false)
+
+        // Set up the spinner
+        val spinnerOptions: Spinner = view.findViewById(R.id.spinnerRegisto)
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, listaOpcoes)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnerOptions.adapter = adapter
+
+        return view
     }
 
     companion object {
