@@ -5,26 +5,21 @@
     <item
         android:id="@+id/bottom_geo"
         android:icon="@drawable/geo_icon"
-        android:state_checked="true"
-        android:title=""
-        app:labelVisibilityMode="unlabeled"
-        app:showAsAction="ifRoom" />
+        android:title="Onde estamos"
+         />
 
     <item
         android:id="@+id/bottom_home"
         android:icon="@drawable/home_icon"
         android:state_checked="true"
-        android:title=""
-        app:labelVisibilityMode="unlabeled"
-
-        app:showAsAction="ifRoom" />
+        android:enabled="true"
+        android:title="Home"
+         />
 
     <item
         android:id="@+id/bottom_phone"
         android:icon="@drawable/phone_icon"
-        android:state_checked="true"
-        android:title=""
-        app:labelVisibilityMode="unlabeled"
-        app:showAsAction="ifRoom" />
+        android:title="Contacta-nos"
+        />
 
 </menu>

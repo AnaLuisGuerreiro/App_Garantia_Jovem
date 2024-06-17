@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.Adapters.RecyclerViewAdapter
 import com.example.myapplication.FAQ
+
 import com.example.myapplication.R
 
 class FAQsActivity : AppCompatActivity() {
