@@ -76,7 +76,7 @@
         </LinearLayout>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView6"
+            android:id="@+id/cardRequest"
             app:cardCornerRadius="8dp"
             android:layout_width="match_parent"
             android:layout_height="185dp"
@@ -206,7 +206,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
+            android:id="@+id/cardRequest2"
             app:cardCornerRadius="8dp"
             android:layout_width="match_parent"
             android:layout_height="185dp"

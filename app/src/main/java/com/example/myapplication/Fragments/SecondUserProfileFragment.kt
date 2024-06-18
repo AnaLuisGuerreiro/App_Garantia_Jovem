@@ -11,10 +11,10 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
-import com.example.myapplication.databinding.FragmentUserProfileBinding
+import com.example.myapplication.databinding.FragmentSecondUserProfileBinding
 
 class SecondUserProfileFragment : Fragment() {
-    private lateinit var binding: FragmentUserProfileBinding
+    private lateinit var binding: FragmentSecondUserProfileBinding
     private lateinit var cardView: CardView
     private lateinit var buttonNewRequest: Button
     private lateinit var textNoRequests: TextView
@@ -33,7 +33,7 @@ class SecondUserProfileFragment : Fragment() {
         binding.submited.typeface = typeface
 
 
-        cardView = binding.cardViewRequest
+        cardView = binding.cardRequest2
         buttonNewRequest = binding.buttonNewRequest
         textNoRequests = binding.textNoRequests
 
