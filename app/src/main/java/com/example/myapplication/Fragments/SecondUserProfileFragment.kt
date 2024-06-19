@@ -35,6 +35,7 @@ class SecondUserProfileFragment : Fragment() {
         val typeface = context?.let { ResourcesCompat.getFont(it, R.font.montserrat_bold) }
         binding.submited.typeface = typeface
 
+
         cardView = binding.cardViewRequest
         buttonNewRequest = binding.buttonNewRequest
         textNoRequests = binding.textNoRequests
