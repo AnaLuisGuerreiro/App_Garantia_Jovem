@@ -54,6 +54,10 @@ class Home : Fragment() {
         binding.buttonJobs.setOnClickListener{
             loadFragment(SelectionMenuFragment())
         }
+
+        binding.buttonInternship.setOnClickListener{
+            loadFragment(EstagioFragment())
+        }
     }
 
     private fun loadFragment(fragment: Fragment) {

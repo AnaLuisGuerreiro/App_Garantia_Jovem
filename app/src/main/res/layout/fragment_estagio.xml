@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:src="@drawable/image2" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="ESTÁGIOS"
+            android:textColor="@color/pink"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/Subtitle"
+            android:layout_width="170dp"
+            android:layout_height="166dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="ENCONTRA O ESTÁGIO CERTO PARA TI"
+            android:textColor="@color/dark_blue"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/horizontalLine1"
+            android:layout_width="0dp"
+            android:layout_height="0.005dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginRight="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Subtitle" />
+
+
+        <View
+            android:id="@+id/horizontalLine3"
+            android:layout_width="0dp"
+            android:layout_height="0.005dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable4"
+
+            tools:layout_editor_absoluteY="613dp"/>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="325dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/pink_rounded_corners"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Estágios Profissionais"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorLink="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalLine1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingLeft="3dp"
+            android:text="Estágios ATIVAR.PT"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.288"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title2"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable1"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_o_que_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="O que é?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="Estágio remunerado, com duração de 9 meses, em todos os setores de atividade, com vista melhorar a tua transição para o mercado de trabalho."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable2"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable1"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_para_quem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Para quem?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="Podes fazer um Estágio ATIVAR se tens idade igual ou superior a 18 anos e menor ou igual a 30 anos, com uma qualificação de nível 3, 4, 5, 6, 7 ou 8 do Quadro Nacional de Qualificações (QNQ) Terás de estar inscrito como desempregado no IEFP."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable3"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable2"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_como_funciona"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Como funciona?"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="As candidaturas são feitas pelas entidades promotoras, que podem ser pessoas singulares ou coletivas de natureza jurídica privada, com ou sem fins lucrativos.
+\n\nAs entidades podem pedir um perfil profissional que será selecionado de entre os jovens inscritos no IEFP ou, em alternativa, podem mesmo identificar na candidatura quais os jovens com quem pretendem realizar um estágio. Se te identificarem é positivo, pois é sinal de que foste proactivo em relação ao mercado de trabalho e criaste condições para gerar a oportunidade que te vão dar.
+\n\nAssim, caso detetes uma oportunidade, podes referir à entidade promotora que estás qualificado a participar nestes estágios."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/expandable4"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pink"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandable3"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/layouts4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/o_que_e_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="Candidatura"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/information4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:text="As candidaturas deverão ser efetuadas pelas entidades promotoras acima referidas.
+\n\nSe a entidade empregadora com quem falares quiser saber mais, clica aqui."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
