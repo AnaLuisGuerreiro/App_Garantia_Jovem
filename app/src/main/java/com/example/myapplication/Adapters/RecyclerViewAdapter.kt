@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.FAQ
+import com.example.myapplication.Models.FAQ
 import com.example.myapplication.R
 
 class RecyclerViewAdapter (private var faqList: ArrayList<FAQ>) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {

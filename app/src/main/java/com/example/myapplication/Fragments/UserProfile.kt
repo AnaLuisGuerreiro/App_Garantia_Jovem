@@ -1,5 +1,6 @@
 package com.example.myapplication.Fragments
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +12,7 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
+import com.example.myapplication.Views.NewRequestActivity
 import com.example.myapplication.databinding.FragmentUserProfileBinding
 
 class UserProfile : Fragment() {
@@ -56,14 +58,11 @@ class UserProfile : Fragment() {
         }
 
         binding.buttonNewRequest.setOnClickListener {
-            loadFragment(NovoPedidoFragment())
+            val activity = requireActivity()
+            val intent = Intent(activity, NewRequestActivity::class.java)
+            startActivity(intent)
         }
     }
 
-    private fun loadFragment(fragment: Fragment) {
-        val transaction = parentFragmentManager.beginTransaction()
-        transaction.replace(R.id.frameLayout, fragment)
-        transaction.commit()
-    }
 }
 

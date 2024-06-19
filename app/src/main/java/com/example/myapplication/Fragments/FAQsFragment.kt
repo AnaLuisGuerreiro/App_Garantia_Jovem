@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.Adapters.RecyclerViewAdapter
-import com.example.myapplication.FAQ
+import com.example.myapplication.Models.FAQ
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentFaqsBinding
 
