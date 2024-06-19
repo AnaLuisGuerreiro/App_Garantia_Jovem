@@ -43,13 +43,14 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        if (intent.extras?.getString("codeFrag").equals("userProfile")) {
-            loadFragment(UserProfile())
-        } else if (intent.extras?.getString("fragment").equals("secondUserProfile")) {
-            loadFragment(SecondUserProfileFragment())
-        } else {
-            loadFragment(Home())
+
+        val fragmentToLoad = when {
+            intent.extras?.getString("codeFrag") == "userProfile" -> UserProfile()
+            intent.extras?.getString("fragment") == "secondUserProfile" -> SecondUserProfileFragment()
+            else -> Home()
         }
+
+        loadFragment(fragmentToLoad)
 
 
         // -------------------- Top navbar, buttons listeners

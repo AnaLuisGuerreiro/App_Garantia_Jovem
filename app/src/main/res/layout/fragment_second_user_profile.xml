@@ -75,8 +75,21 @@
                 android:textSize="13sp"/>
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textNoRequests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/dark_blue"
+            android:text="Sem pedidos em análise"
+            android:visibility="gone" />
+
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView6"
+            android:id="@+id/cardViewRequest"
             app:cardCornerRadius="8dp"
             android:layout_width="match_parent"
             android:layout_height="185dp"
@@ -206,7 +219,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
+            android:id="@+id/cardViewRequest2"
             app:cardCornerRadius="8dp"
             android:layout_width="match_parent"
             android:layout_height="185dp"
