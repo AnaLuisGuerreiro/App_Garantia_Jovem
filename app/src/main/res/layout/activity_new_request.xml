@@ -2,12 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/register"
+    android:id="@+id/newRequest"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/degrade_background"
     android:orientation="vertical"
-    tools:context=".Views.RegisterActivity">
+    tools:context=".Views.NewRequestActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/firstName"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/grey"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_alignParentStart="true"
@@ -64,7 +64,7 @@
                 android:layout_marginStart="18dp"
                 android:backgroundTint="@color/white"
                 android:ems="10"
-                android:textSize="20dp"
+                android:textSize="18sp"
                 android:text="Filipe"
                 android:gravity="center_vertical"
                 android:fontFamily="@font/montserrat_regular"
@@ -101,14 +101,14 @@
 
             <TextView
                 android:id="@+id/lastName"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/grey"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginStart="18dp"
                 android:backgroundTint="@color/white"
                 android:ems="10"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="20dp"
+                android:textSize="18sp"
                 android:gravity="center_vertical"
                 android:text="Araújo"
                 tools:ignore="MissingConstraints,TextFields" />
@@ -142,12 +142,12 @@
                 android:id="@+id/emailRegister"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/grey"
                 android:layout_marginStart="18dp"
                 android:backgroundTint="@color/white"
                 android:ems="10"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
+                android:textSize="17dp"
                 android:gravity="center_vertical"
                 android:text="filipe.araujo.prt_a@msft.cesae.pt"
                 tools:ignore="MissingConstraints,TextFields" />
@@ -187,9 +187,9 @@
                 android:layout_marginStart="18dp"
                 android:backgroundTint="@color/white"
                 android:ems="10"
-                android:textColor="@color/dark_blue"
+                android:textColor="@color/grey"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
+                android:textSize="18dp"
                 android:gravity="center_vertical"
                 android:text="30/03/1997"
                 tools:ignore="MissingConstraints,TextFields" />
@@ -230,7 +230,7 @@
                 android:ems="10"
                 android:textColor="@color/dark_blue"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="16dp"
+                android:textSize="18dp"
                 android:gravity="center_vertical"
                 android:text="932442637"
                 tools:ignore="MissingConstraints,TextFields" />
@@ -270,12 +270,13 @@
                 android:ems="10"
                 android:textColor="@color/dark_blue"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:gravity="center_vertical"
                 android:text="Porto"
                 tools:ignore="MissingConstraints,TextFields" />
 
             <ImageView
+                android:id="@+id/geoIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="270dp"
@@ -310,7 +311,7 @@
                 android:ems="10"
                 android:textColor="@color/dark_blue"
                 android:fontFamily="@font/montserrat_regular"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:gravity="center_vertical"
                 android:text="Paranhos"
                 tools:ignore="MissingConstraints,TextFields" />
@@ -344,7 +345,7 @@
             android:layout_height="match_parent">
 
             <Spinner
-                android:id="@+id/spinnerRegisto"
+                android:id="@+id/spinnerRegister"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:layout_marginStart="18dp"
@@ -358,4 +359,19 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/makeNewRequest"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/montserrat_regular"
+        android:padding="10dp"
+        android:text="Novo Pedido"
+        app:cornerRadius="10dp"
+        android:textSize="20sp" />
 </LinearLayout>
