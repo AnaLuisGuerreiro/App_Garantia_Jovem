@@ -33,6 +33,13 @@ class WhereAreWe : Fragment() {
         val mapa: ImageView = binding.mapa
         mapa.setImageResource(R.drawable.mapa)
 
+        binding.button2.setOnClickListener{
+            loadFragment(PartnersFragment())
+        }
+        binding.button5.setOnClickListener{
+            loadFragment(PartnersEstagioFragment())
+        }
+
         val spinner = binding.spinner
         val arrayAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_spinner_dropdown_item, listaConselho)
         spinner.adapter = arrayAdapter
@@ -57,6 +64,12 @@ class WhereAreWe : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.frameLayout, fragment)
+        transaction.commit()
     }
 
 }

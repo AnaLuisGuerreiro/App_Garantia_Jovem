@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/mapa" />
+
+    <TextView
+        android:id="@+id/Subtitle"
+        android:layout_width="206dp"
+        android:layout_height="122dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/green"
+        android:text="ONDE ESTAMOS"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <View
+        android:id="@+id/horizontalLine1"
+        android:layout_width="0dp"
+        android:layout_height="0.005dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="28dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapa"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Estágio"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorLink="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine1"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/light_grey"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/iefp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Serviço de Emprego do Porto"
+            android:textColor="@color/dark_blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="R. Guedes de Azevedo, 213, 4049-008, Porto"
+            android:textColor="@color/dark_blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="se.porto@iefp.pt"
+            android:paddingBottom="15dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="220989280"
+            android:textColor="@color/dark_blue"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="65dp"
+            tools:srcCompat="@drawable/mobile_icon" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="90dp"
+            tools:srcCompat="@drawable/email_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="150dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     true
+
                 }
 
                 else -> false
@@ -74,8 +75,7 @@ class MainActivity : AppCompatActivity() {
             drawerLayout.openDrawer(binding.hamburguerView)
         }
 
-        val navigationView = binding.hamburguerView
-        navigationView.setNavigationItemSelectedListener { menuItem ->
+        binding.hamburguerView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.hamburguerIcon -> {
                     loadFragment(Home())
@@ -85,21 +85,25 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.aboutUs -> {
                     loadFragment(SobreFragment())
+                    drawerLayout.closeDrawers()
                     true
                 }
 
                 R.id.rgpd -> {
                     loadFragment(Rgpd())
+                    drawerLayout.closeDrawers()
                     true
                 }
 
                 R.id.privacy -> {
                     loadFragment(PoliticsFragment())
+                    drawerLayout.closeDrawers()
                     true
                 }
 
                 R.id.faqs -> {
                     loadFragment(FAQsFragment())
+                    drawerLayout.closeDrawers()
                     true
                 }
 
@@ -142,4 +146,5 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.frameLayout, fragment)
         transaction.commit()
     }
+
 }

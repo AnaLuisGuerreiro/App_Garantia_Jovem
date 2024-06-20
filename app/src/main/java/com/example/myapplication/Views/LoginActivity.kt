@@ -2,8 +2,10 @@ package com.example.myapplication.Views
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapplication.databinding.ActivityLoginBinding
@@ -24,10 +26,22 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
+
+
         binding.buttonLogin.setOnClickListener {
-            val i = Intent(this, MainActivity::class.java)
-            i.putExtra("codeFrag","userProfile")
-            startActivity(i)
+
+            val email = binding.email.text.toString()
+            val password = binding.password.text.toString()
+
+            if (email == "filipe.araujo.prt_a@msft.cesae.pt" && password == "12345") {
+
+                val i = Intent(this, MainActivity::class.java)
+                i.putExtra("codeFrag","userProfile")
+                startActivity(i)
+            } else {
+                Toast.makeText(applicationContext, "E-mail ou password inválido", Toast.LENGTH_LONG).show()
+            }
+
         }
 
         binding.buttonLetsGo.setOnClickListener{

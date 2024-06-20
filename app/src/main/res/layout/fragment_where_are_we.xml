@@ -14,28 +14,30 @@
 
         <ImageView
             android:id="@+id/mapa"
-            android:layout_width="208dp"
-            android:layout_height="195dp"
-            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="0dp"
             android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/mapa" />
+            tools:srcCompat="@drawable/mapa" />
 
         <TextView
             android:id="@+id/Subtitle"
-            android:layout_width="221dp"
-            android:layout_height="116dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="1dp"
+            android:layout_width="206dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/montserrat_bold"
-            android:text="ONDE ESTAMOS"
             android:textColor="@color/green"
-            android:textSize="38sp"
+            android:text="ONDE ESTAMOS"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <View
             android:id="@+id/horizontalLine1"
