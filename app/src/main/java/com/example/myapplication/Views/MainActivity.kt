@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     true
+
                 }
 
                 else -> false
@@ -145,4 +146,5 @@ class MainActivity : AppCompatActivity() {
         transaction.replace(R.id.frameLayout, fragment)
         transaction.commit()
     }
+
 }
