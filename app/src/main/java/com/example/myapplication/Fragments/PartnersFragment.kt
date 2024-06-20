@@ -16,7 +16,7 @@ class PartnersFragment : Fragment() {
     private var _binding: FragmentPartnersBinding? = null
     private val binding get() = _binding!!
 
-    val listaConselhos = arrayOf("Covilhã")
+    val listaConselhos = arrayOf("Águeda")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

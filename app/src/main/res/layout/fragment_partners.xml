@@ -97,7 +97,7 @@
             android:textSize="8sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Centro de Emprego da Covilhã" />
+            android:text="Serviço de Emprego de Águeda" />
 
         <TextView
             android:id="@+id/textView4"
@@ -108,7 +108,7 @@
             android:textSize="7sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Av. 25 de Abril, 66, 6201-014 COVILHÃ" />
+            android:text="R. do Rio Grande, 13, 3754-909 ÁGUEDA" />
 
         <TextView
             android:id="@+id/textView7"
@@ -118,7 +118,7 @@
             android:layout_marginTop="50dp"
             android:textColor="@color/dark_blue"
             android:fontFamily="@font/montserrat_regular"
-            android:text="275094400"
+            android:text="234093350"
             android:textSize="7sp" />
 
         <TextView
@@ -130,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/dark_blue"
-            android:text="ce.covilha@iefp.pt" />
+            android:text="se.agueda@iefp.pt" />
 
         <ImageView
             android:id="@+id/imageView3"
