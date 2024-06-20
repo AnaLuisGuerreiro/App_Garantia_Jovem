@@ -180,7 +180,7 @@
                     android:text="@string/info1"
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -228,7 +228,7 @@
                     android:text="Jovens à procura do primeiro emprego ou desempregados, com idade entre os 18 e os 35 anos, em situação de desemprego involuntário ou inscritos há mais de 9 meses. \n\nTens de estar inscrito no IEFP. \n\nConsulta aqui."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -278,10 +278,11 @@
 
 \n\n\t\t• um investimento total superior a 200.000€.
 
-\n\nO projeto é apresentado diretamente a uma das instituições bancárias aderentes. No caso dos projetos de criação do próprio emprego, o acesso ao pagamento de uma só vez do montante total do subsídio de desemprego pode ser complementado por acesso a crédito bancário. As candidaturas são apresentadas no teu serviço de emprego do IEFP."
+\n\nO projeto é apresentado diretamente a uma das instituições bancárias aderentes. No caso dos projetos de criação do próprio emprego, o acesso ao pagamento de uma só vez do montante total do subsídio de desemprego pode ser complementado por acesso a crédito bancário.
+\n\nAs candidaturas são apresentadas no teu serviço de emprego do IEFP."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -344,7 +345,7 @@
                     android:text="O Programa Nacional de Microcrédito baseia-se num acesso mais facilitado ao crédito - através da tipologia MICROINVEST - e na disponibilização de apoio técnico na criação e na formação do empreendedor, durante os primeiros anos de vida do negócio.\n\nSurge para apoiar a criação do emprego e o empreendedorismo entre as populações com maiores dificuldades de acesso ao mercado de trabalho."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -391,7 +392,7 @@
                     android:text="Jovens até aos 29 anos com especiais dificuldades de acesso ao mercado de trabalho e em risco de exclusão social, que possuam uma ideia de negócio viável, perfil de empreendedor e formulem e apresentem projetos viáveis para criar postos de trabalho.\n\nMais informações, candidaturas aqui."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 

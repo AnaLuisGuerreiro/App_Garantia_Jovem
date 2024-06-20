@@ -156,7 +156,7 @@
                     android:text="Estágio remunerado, com duração de 9 meses, em todos os setores de atividade, com vista melhorar a tua transição para o mercado de trabalho."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -204,7 +204,7 @@
                     android:text="Podes fazer um Estágio ATIVAR se tens idade igual ou superior a 18 anos e menor ou igual a 30 anos, com uma qualificação de nível 3, 4, 5, 6, 7 ou 8 do Quadro Nacional de Qualificações (QNQ) Terás de estar inscrito como desempregado no IEFP."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -253,7 +253,7 @@
 \n\nAssim, caso detetes uma oportunidade, podes referir à entidade promotora que estás qualificado a participar nestes estágios."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
@@ -302,7 +302,7 @@
 \n\nSe a entidade empregadora com quem falares quiser saber mais, clica aqui."
                     android:textAlignment="gravity"
                     android:textColor="@color/white"
-                    android:textSize="10sp"
+                    android:textSize="12sp"
                     android:visibility="gone" />
 
 
