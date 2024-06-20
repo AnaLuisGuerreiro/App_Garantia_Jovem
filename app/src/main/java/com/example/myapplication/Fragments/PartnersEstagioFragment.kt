@@ -38,6 +38,8 @@ class PartnersEstagioFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.mapa.setImageResource(R.drawable.mapa)
+        binding.imageView4.setImageResource(R.drawable.mobile_icon)
+        binding.imageView3.setImageResource(R.drawable.email_icon)
 
         val spinner = binding.spinner
         val arrayAdapter = ArrayAdapter<String>(
