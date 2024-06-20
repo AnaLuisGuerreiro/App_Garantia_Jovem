@@ -55,7 +55,6 @@
             android:background="@drawable/rounded_button"
             android:fontFamily="@font/montserrat_semibold"
             android:elevation="8dp"
-            android:textAllCaps="false"
             android:textSize="13sp"
             android:text="Submetido"/>
 
@@ -71,7 +70,6 @@
             android:textColor="@color/dark_blue"
             android:fontFamily="@font/montserrat_medium"
             android:background="@drawable/rounded_button"
-            android:textAllCaps="false"
             android:textSize="13sp"
             android:text="Em análise"/>
     </LinearLayout>
