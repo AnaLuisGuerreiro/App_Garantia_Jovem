@@ -18,25 +18,10 @@
             android:name=".Views.NewRequestActivity"
             android:exported="false" />
         <activity
-            android:name=".Views.NewRequest"
-            android:exported="false" />
-        <activity
-            android:name=".Views.RGPD"
-            android:exported="false" />
-        <activity
-            android:name=".Views.SelectionMenuActivity"
-            android:exported="false" />
-        <activity
             android:name=".Views.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".Views.RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.SelectedInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Views.PoliticsActivity"
             android:exported="false" />
         <activity
             android:name=".Views.MainActivity"
